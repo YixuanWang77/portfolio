@@ -1,0 +1,14 @@
+# Original research, CV, video and private source material
+/source-materials/
+# Local review notes and source-material audit stay on this computer
+/docs/
+# Local extraction, tools, QA captures and reports may contain private data
+/.local/
+/node_modules/
+/dist/
+/.env
+/.env.*
+!.env.example
+*.log
+/playwright-report/
+/test-results/

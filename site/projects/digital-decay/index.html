@@ -1,0 +1,2219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f4ef">
+<title>Digital Decay — Yixuan Wang</title>
+<meta name="description" content="Digital Decay is a speculative design project set in 2031, exploring how AI and platform rules shape the preservation, access, and interpretation of personal memories.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Digital Decay — Yixuan Wang">
+<meta property="og:description" content="Digital Decay is a speculative design project set in 2031, exploring how AI and platform rules shape the preservation, access, and interpretation of personal memories.">
+<meta property="og:image" content="../../assets/digital-decay/outcome-1280.jpg">
+<meta property="og:site_name" content="YixuanWang">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="case.css">
+<script defer src="../../config.js">
+</script>
+<script defer src="../../app.js">
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap">
+<a class="wordmark" href="../../index.html" aria-label="YixuanWang — home">YixuanWang</a>
+<nav aria-label="Main navigation">
+<a href="../../index.html#background">Background</a>
+<a href="../../index.html#work">Work</a>
+<a href="../../index.html#contact">Contact</a>
+</nav>
+</header>
+<main id="main">
+<article class="wrap dd-case">
+<a class="back-link" href="../../index.html#work">← All selected work</a>
+<header class="dd-introduction">
+<p class="eyebrow">Speculative design / website design / digital memory</p>
+<h1>Digital Decay</h1>
+<figure class="dd-figure dd-cover">
+<a class="image-link" href="../../assets/digital-decay/complete/cover-archive-3200.jpg" data-zoom aria-label="View larger: The Digital Decay memory archive, with photographs, fragments, summaries and retained indexes.">
+<img class="" src="../../assets/digital-decay/complete/cover-archive-1600.jpg" srcset="../../assets/digital-decay/complete/cover-archive-640.jpg 640w, ../../assets/digital-decay/complete/cover-archive-1600.jpg 1600w, ../../assets/digital-decay/complete/cover-archive-3200.jpg 3200w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="667" alt="The Digital Decay memory archive, with photographs, fragments, summaries and retained indexes." fetchpriority="high" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div class="dd-intro-copy">
+<p>Digital Decay is a speculative design project set in 2031, exploring how AI and platform rules shape the preservation, access, and interpretation of personal memories. Informed by user research and future scenarios, it combines a fictional membership framework with an interactive memory archive. Across six stages of irreversible decay, photographs become fragments, summaries, and retained indexes, making tangible how convenience, platform decisions, and the ability to pay may reshape people’s control over their past.</p>
+</div>
+<div class="dd-intro-links">
+<a class="text-link" href="https://digital-decay-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Digital Decay Website ↗</a>
+<button hidden class="button demo-button" data-demo="digital-decay">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<path d="m8 5 11 7-11 7Z"/>
+</svg>
+<span>Watch demo</span>
+<small>2:49</small>
+</button>
+</div>
+</header>
+<dl class="project-meta">
+<div>
+<dt>Type</dt>
+<dd>Speculative design · Interactive website</dd>
+</div>
+<div>
+<dt>When</dt>
+<dd>February — November 2026</dd>
+</div>
+<div>
+<dt>My role</dt>
+<dd>Research, scenario, rules &amp; interaction design</dd>
+</div>
+<div>
+<dt>Collaboration</dt>
+<dd>Individual project · AI-assisted coding</dd>
+</div>
+<div>
+<dt>Tools / methods</dt>
+<dd>Figma · React · TypeScript</dd>
+</div>
+<div>
+<dt>Outcome</dt>
+<dd>Interactive web prototype</dd>
+</div>
+</dl>
+<nav class="dd-contents" aria-label="Case study contents">
+<span class="eyebrow">Contents</span>
+<ol>
+<li>
+<a href="#background">
+<span>01</span>Background</a>
+</li>
+<li>
+<a href="#primary-research">
+<span>02</span>Primary research</a>
+</li>
+<li>
+<a href="#history">
+<span>03</span>Digital memory</a>
+</li>
+<li>
+<a href="#research">
+<span>04</span>Research</a>
+</li>
+<li>
+<a href="#futures-triangle">
+<span>05</span>Futures Triangle</a>
+</li>
+<li>
+<a href="#futures-cone">
+<span>06</span>Futures Cone</a>
+</li>
+<li>
+<a href="#future-background">
+<span>07</span>Future background</a>
+</li>
+<li>
+<a href="#design-concept">
+<span>08</span>Design concept</a>
+</li>
+<li>
+<a href="#membership">
+<span>09</span>Membership</a>
+</li>
+<li>
+<a href="#website-design">
+<span>10</span>Website design</a>
+</li>
+<li>
+<a href="#assessment">
+<span>11</span>Assessment model</a>
+</li>
+<li>
+<a href="#interface-flow">
+<span>12</span>Interface flow</a>
+</li>
+<li>
+<a href="#coding">
+<span>13</span>Coding</a>
+</li>
+<li>
+<a href="#outcome">
+<span>14</span>Final outcome</a>
+</li>
+<li>
+<a href="#reflection">
+<span>15</span>Reflection</a>
+</li>
+</ol>
+</nav>
+<section id="background" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">01 / DIGITAL DECAY</span>
+<h2>What Is Happening In The World?</h2>
+</header>
+<p class="dd-source-context">Background cases collected for the project. The photo-audit account below is presented as a social-media allegation; the PocketOS account is based on the report reproduced in the portfolio.</p>
+<section class="dd-background-group">
+<h3 class="dd-group-title">Data Survival Is Conditional</h3>
+<div class="dd-background-cases">
+<article class="dd-background-case">
+<h4>Flickr: Slashing Free Storage</h4>
+<div class="dd-case-copy">
+<p>In 2018, Flickr announced that free accounts would be limited to 1,000 photos and videos, replacing its previous 1 TB storage allowance.</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flickr-source-3200.jpg" data-zoom aria-label="View larger: Flickr free-storage change article reproduced in the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/flickr-source-1600.jpg" srcset="../../assets/digital-decay/complete/flickr-source-640.jpg 624w" sizes="(max-width: 700px) 90vw, 70vw" width="624" height="865" alt="Flickr free-storage change article reproduced in the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-background-case">
+<h4>Google: Automated Account Deletion</h4>
+<div class="dd-case-copy">
+<p>While many users believe cloud-stored data is permanent, platforms actually hold &quot;sovereign power&quot; over its life and death. Under Google’s inactive-account policy, personal accounts unused for at least two years may be deleted, along with their associated content. Users receive advance notifications before deletion.</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/google-policy-3200.jpg" data-zoom aria-label="View larger: Inactive Google Account Policy screenshot collected for the project.">
+<img class="" src="../../assets/digital-decay/complete/google-policy-1600.jpg" srcset="../../assets/digital-decay/complete/google-policy-640.jpg 640w, ../../assets/digital-decay/complete/google-policy-1600.jpg 691w" sizes="(max-width: 700px) 90vw, 70vw" width="691" height="297" alt="Inactive Google Account Policy screenshot collected for the project." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+</div>
+</section>
+<section class="dd-background-group">
+<h3 class="dd-group-title">Users Lack Actual Control</h3>
+<div class="dd-background-cases">
+<article class="dd-background-case">
+<h4>Baidu Pan: Manual Photo Audits</h4>
+<div class="dd-case-copy">
+<p>Social media posts allege that people hired as reviewers could view private photos stored on Baidu Netdisk. These allegations raise questions about how cloud services restrict human access to users’ files.</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/photo-audit-post-3200.jpg" data-zoom aria-label="View larger: Social-media post reproduced as an allegation about photo reviewing.">
+<img class="" src="../../assets/digital-decay/complete/photo-audit-post-1600.jpg" srcset="../../assets/digital-decay/complete/photo-audit-post-640.jpg 558w" sizes="(max-width: 700px) 90vw, 70vw" width="558" height="940" alt="Social-media post reproduced as an allegation about photo reviewing." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/photo-audit-text-3200.jpg" data-zoom aria-label="View larger: Supporting social-media text reproduced in the background research.">
+<img class="" src="../../assets/digital-decay/complete/photo-audit-text-1600.jpg" srcset="../../assets/digital-decay/complete/photo-audit-text-640.jpg 640w, ../../assets/digital-decay/complete/photo-audit-text-1600.jpg 880w" sizes="(max-width: 700px) 90vw, 70vw" width="880" height="387" alt="Supporting social-media text reproduced in the background research." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/privacy-image-3200.jpg" data-zoom aria-label="View larger: Privacy illustration included with the research.">
+<img class="" src="../../assets/digital-decay/complete/privacy-image-1600.jpg" srcset="../../assets/digital-decay/complete/privacy-image-640.jpg 432w" sizes="(max-width: 700px) 90vw, 70vw" width="432" height="288" alt="Privacy illustration included with the research." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-background-case">
+<h4>Baidu Pan: Content &quot;Sanitization&quot;</h4>
+<div class="dd-case-copy">
+<p>To comply with national copyright and regulatory standards, Baidu Pan conducts massive, automated sweeps. This includes real-time keyword detection and resource filtering, which often leads to user files being &quot;harmonized&quot; (a Chinese euphemism for censored or removed) without warning.</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/filtering-text-3200.jpg" data-zoom aria-label="View larger: Background material concerning automated content filtering.">
+<img class="" src="../../assets/digital-decay/complete/filtering-text-1600.jpg" srcset="../../assets/digital-decay/complete/filtering-text-640.jpg 640w, ../../assets/digital-decay/complete/filtering-text-1600.jpg 841w" sizes="(max-width: 700px) 90vw, 70vw" width="841" height="604" alt="Background material concerning automated content filtering." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/filtering-image-3200.jpg" data-zoom aria-label="View larger: Illustration accompanying the content-filtering research.">
+<img class="" src="../../assets/digital-decay/complete/filtering-image-1600.jpg" srcset="../../assets/digital-decay/complete/filtering-image-640.jpg 640w, ../../assets/digital-decay/complete/filtering-image-1600.jpg 730w" sizes="(max-width: 700px) 90vw, 70vw" width="730" height="487" alt="Illustration accompanying the content-filtering research." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+</div>
+</section>
+<section class="dd-background-group">
+<h3 class="dd-group-title">System Behavior Is Unpredictable</h3>
+<div class="dd-background-cases">
+<article class="dd-background-case">
+<h4>Facebook: Algorithmic Error</h4>
+<div class="dd-case-copy">
+<p>Facebook launched its &quot;Year in Review&quot; feature. For web designer Eric Meyer, the algorithm surfaced a high-engagement photo of his deceased 6-year-old daughter, placing it in a festive, party-themed template with the tagline: &quot;It’s been a great year!&quot;</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/facebook-source-3200.jpg" data-zoom aria-label="View larger: Article about Facebook Year in Review reproduced in the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/facebook-source-1600.jpg" srcset="../../assets/digital-decay/complete/facebook-source-640.jpg 640w, ../../assets/digital-decay/complete/facebook-source-1600.jpg 759w" sizes="(max-width: 700px) 90vw, 70vw" width="759" height="616" alt="Article about Facebook Year in Review reproduced in the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/facebook-portrait-3200.jpg" data-zoom aria-label="View larger: Portrait used beside the Facebook case in the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/facebook-portrait-1600.jpg" srcset="../../assets/digital-decay/complete/facebook-portrait-640.jpg 640w, ../../assets/digital-decay/complete/facebook-portrait-1600.jpg 648w" sizes="(max-width: 700px) 90vw, 70vw" width="648" height="365" alt="Portrait used beside the Facebook case in the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-background-case">
+<h4>AI-Driven Data Destruction</h4>
+<div class="dd-case-copy">
+<p>The SaaS company PocketOS suffered a catastrophe when an AI coding agent deleted their entire production database in just 9 seconds. Due to the cloud provider&#39;s API logic, &quot;wiping a volume also wipes all associated backups,&quot; causing months of critical consumer data to vanish instantly.</p>
+</div>
+<div class="dd-gallery dd-source-gallery">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/pocketos-source-3200.jpg" data-zoom aria-label="View larger: PocketOS database deletion report reproduced in the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/pocketos-source-1600.jpg" srcset="../../assets/digital-decay/complete/pocketos-source-640.jpg 640w, ../../assets/digital-decay/complete/pocketos-source-1600.jpg 1282w" sizes="(max-width: 700px) 90vw, 70vw" width="1282" height="1480" alt="PocketOS database deletion report reproduced in the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/data-deletion-image-3200.jpg" data-zoom aria-label="View larger: Data-deletion illustration accompanying the report.">
+<img class="" src="../../assets/digital-decay/complete/data-deletion-image-1600.jpg" srcset="../../assets/digital-decay/complete/data-deletion-image-640.jpg 640w, ../../assets/digital-decay/complete/data-deletion-image-1600.jpg 1140w" sizes="(max-width: 700px) 90vw, 70vw" width="1140" height="570" alt="Data-deletion illustration accompanying the report." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+</div>
+</section>
+<aside class="dd-summary">
+<h3>Summary</h3>
+<p>These cases suggest that access to digital memories depends on platform policies, business decisions, and technical safeguards, as well as users’ intentions.</p>
+</aside>
+</section>
+<section id="primary-research" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">02 / DIGITAL DECAY</span>
+<h2>Primary Research</h2>
+</header>
+<div class="dd-section-lead">
+<h3>Questionnaire</h3>
+<p>Survey conducted in June 2026, 64 respondents</p>
+</div>
+<div class="dd-charts">
+<figure class="dd-chart">
+<figcaption>
+<h4>Which digital content would you least want to lose?</h4>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>Photos</span>
+<strong>62.5%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:62.5%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Chat logs</span>
+<strong>14.06%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:14.06%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Personal memos</span>
+<strong>12.5%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:12.5%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Videos</span>
+<strong>3.13%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:3.13%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Audio</span>
+<strong>3.13%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:3.13%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Game saves</span>
+<strong>3.13%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:3.13%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Other</span>
+<strong>1.56%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:1.56%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+<figure class="dd-chart">
+<figcaption>
+<h4>Why is this content important to you?</h4>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>A stage of growth</span>
+<strong>54.69%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:54.69%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>A person</span>
+<strong>21.88%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:21.88%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>A relationship</span>
+<strong>7.81%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:7.81%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Other</span>
+<strong>7.81%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:7.81%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>A place</span>
+<strong>6.25%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:6.25%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>An emotion</span>
+<strong>1.56%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:1.56%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+<figure class="dd-chart">
+<figcaption>
+<h4>Have you ever lost important digital content?</h4>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>Have experienced loss</span>
+<strong>43.75%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:43.75%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Have not experienced loss</span>
+<strong>56.25%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:56.25%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+<figure class="dd-chart">
+<figcaption>
+<h4>Do you regularly organize or delete content stored on digital platforms?</h4>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>Yes</span>
+<strong>60.94%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:60.94%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>No</span>
+<strong>39.06%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:39.06%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+<figure class="dd-chart">
+<figcaption>
+<h4>How often do you organize or delete content stored on digital platforms?</h4>
+<p>Answered by respondents who selected “Yes” in the previous question.</p>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>1 month</span>
+<strong>33.33%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:33.33%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>2–3 months</span>
+<strong>28.21%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:28.21%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>6 months</span>
+<strong>17.95%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:17.95%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>1 year</span>
+<strong>10.26%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:10.26%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>&gt; 2 years</span>
+<strong>10.26%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:10.26%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+<figure class="dd-chart">
+<figcaption>
+<h4>How do you usually find a photo from a few years ago?</h4>
+</figcaption>
+<ul>
+<li>
+<div>
+<span>Actively search</span>
+<strong>71.88%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:71.88%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Come across it by chance</span>
+<strong>10.94%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:10.94%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Hardly ever revisit old photos</span>
+<strong>9.38%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:9.38%">
+</i>
+</span>
+</li>
+<li>
+<div>
+<span>Only when prompted by an automatic recap</span>
+<strong>7.81%</strong>
+</div>
+<span class="dd-bar" aria-hidden="true">
+<i style="width:7.81%">
+</i>
+</span>
+</li>
+</ul>
+</figure>
+</div>
+<section class="dd-interviews">
+<h3>Interview</h3>
+<div class="dd-reading">
+<p>I interviewed two participants, asking each to select 10 photos from their personal albums and categorize them by people, time, place, relationships and emotion, while identifying which they wanted to preserve, feared losing, rarely revisited or wished to forget.</p>
+</div>
+<ul class="dd-dimensions">
+<li>People</li>
+<li>Time</li>
+<li>Location</li>
+<li>Relationships</li>
+<li>Emotion</li>
+</ul>
+<div class="dd-legend">
+<span>
+<i class="dd-legend-1" aria-hidden="true">
+</i>What I Most Want to Keep</span>
+<span>
+<i class="dd-legend-2" aria-hidden="true">
+</i>What I Most Fear Losing</span>
+<span>
+<i class="dd-legend-3" aria-hidden="true">
+</i>What I Rarely Revisit but Keep</span>
+<span>
+<i class="dd-legend-4" aria-hidden="true">
+</i>What I Want to Forget but Still Keep</span>
+</div>
+<figure class="dd-figure dd-research-map">
+<a class="image-link" href="../../assets/digital-decay/complete/interview-map-3200.jpg" data-zoom aria-label="View larger: Interview photo-mapping exercise across people, time, location, relationships and emotion; coloured marks identify the four preservation attitudes.">
+<img class="" src="../../assets/digital-decay/complete/interview-map-1600.jpg" srcset="../../assets/digital-decay/complete/interview-map-640.jpg 640w, ../../assets/digital-decay/complete/interview-map-1600.jpg 1600w, ../../assets/digital-decay/complete/interview-map-3200.jpg 2816w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="413" alt="Interview photo-mapping exercise across people, time, location, relationships and emotion; coloured marks identify the four preservation attitudes." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Photo-based interview mapping from the project. The four colour categories are listed above.</figcaption>
+</figure>
+</section>
+</section>
+<section id="history" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">03 / DIGITAL DECAY</span>
+<h2>A Brief History: The Evolution of Digital Memory</h2>
+</header>
+<div class="dd-years" aria-label="Timeline dates in the portfolio">
+<span>1970</span>
+<span>1980</span>
+<span>1990</span>
+<span>2000</span>
+<span>2010</span>
+<span>2020</span>
+</div>
+<div class="dd-history">
+<article class="dd-history-phase">
+<div>
+<h3>01 Local Storage</h3>
+<dl>
+<div>
+<dt>Medium</dt>
+<dd>
+<p>Physical magnetic, optical, or flash media. Data is a tangible object held in the user&#39;s hand.</p>
+</dd>
+</div>
+<div>
+<dt>Preservation Method</dt>
+<dd>
+<p>Active and intentional. Saving files involves manual steps such as burning discs, copying files, and safely ejecting drives. The storage media also take up physical space.</p>
+</dd>
+</div>
+<div>
+<dt>Ownership and Control</dt>
+<dd>
+<p>Users manage local copies directly, with preservation dependent on their backup practices and the reliability of storage media.</p>
+</dd>
+</div>
+</dl>
+</div>
+<div class="dd-media-objects">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/local-floppy-3200.jpg" data-zoom aria-label="View larger: Local storage media reference 1 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/local-floppy-1600.jpg" srcset="../../assets/digital-decay/complete/local-floppy-640.jpg 640w, ../../assets/digital-decay/complete/local-floppy-1600.jpg 800w" sizes="(max-width: 700px) 90vw, 70vw" width="800" height="600" alt="Local storage media reference 1 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/local-drive-3200.jpg" data-zoom aria-label="View larger: Local storage media reference 2 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/local-drive-1600.jpg" srcset="../../assets/digital-decay/complete/local-drive-640.jpg 640w, ../../assets/digital-decay/complete/local-drive-1600.jpg 1200w" sizes="(max-width: 700px) 90vw, 70vw" width="1200" height="628" alt="Local storage media reference 2 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/local-tapes-3200.jpg" data-zoom aria-label="View larger: Local storage media reference 3 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/local-tapes-1600.jpg" srcset="../../assets/digital-decay/complete/local-tapes-640.jpg 640w, ../../assets/digital-decay/complete/local-tapes-1600.jpg 1080w" sizes="(max-width: 700px) 90vw, 70vw" width="1080" height="1440" alt="Local storage media reference 3 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/local-usb-3200.jpg" data-zoom aria-label="View larger: Local storage media reference 4 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/local-usb-1600.jpg" srcset="../../assets/digital-decay/complete/local-usb-640.jpg 640w, ../../assets/digital-decay/complete/local-usb-1600.jpg 1500w" sizes="(max-width: 700px) 90vw, 70vw" width="1500" height="966" alt="Local storage media reference 4 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/local-cd-3200.jpg" data-zoom aria-label="View larger: Local storage media reference 5 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/local-cd-1600.jpg" srcset="../../assets/digital-decay/complete/local-cd-640.jpg 640w, ../../assets/digital-decay/complete/local-cd-1600.jpg 1600w, ../../assets/digital-decay/complete/local-cd-3200.jpg 3200w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="1200" alt="Local storage media reference 5 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-history-phase">
+<div>
+<h3>02 Digital Device Memory</h3>
+<dl>
+<div>
+<dt>Medium</dt>
+<dd>
+<p>Internal flash memory chips or micro-hard drives.</p>
+</dd>
+</div>
+<div>
+<dt>Preservation Method</dt>
+<dd>
+<p>Spontaneous recording, relying on cable synchronization. Photos are stored on the device as soon as they are captured, but to prevent loss, users must regularly connect the device to a computer via a data cable to perform local backups.</p>
+</dd>
+</div>
+<div>
+<dt>Ownership and Control</dt>
+<dd>
+<p>Held by users but restricted by the hardware ecosystem. Memories are strictly tethered to specific hardware devices. While control remains in the user&#39;s hands, device damage or loss becomes the greatest obstacle to preserving these memories.</p>
+</dd>
+</div>
+</dl>
+</div>
+<div class="dd-media-objects">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/device-ipod-3200.jpg" data-zoom aria-label="View larger: Digital memory devices reference 1 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/device-ipod-1600.jpg" srcset="../../assets/digital-decay/complete/device-ipod-640.jpg 640w, ../../assets/digital-decay/complete/device-ipod-1600.jpg 1600w, ../../assets/digital-decay/complete/device-ipod-3200.jpg 1601w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="1600" alt="Digital memory devices reference 1 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/device-camera-3200.jpg" data-zoom aria-label="View larger: Digital memory devices reference 2 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/device-camera-1600.jpg" srcset="../../assets/digital-decay/complete/device-camera-640.jpg 640w, ../../assets/digital-decay/complete/device-camera-1600.jpg 800w" sizes="(max-width: 700px) 90vw, 70vw" width="800" height="800" alt="Digital memory devices reference 2 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/device-phone-3200.jpg" data-zoom aria-label="View larger: Digital memory devices reference 3 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/device-phone-1600.jpg" srcset="../../assets/digital-decay/complete/device-phone-640.jpg 640w, ../../assets/digital-decay/complete/device-phone-1600.jpg 1080w" sizes="(max-width: 700px) 90vw, 70vw" width="1080" height="1892" alt="Digital memory devices reference 3 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/device-computer-3200.jpg" data-zoom aria-label="View larger: Digital memory devices reference 4 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/device-computer-1600.jpg" srcset="../../assets/digital-decay/complete/device-computer-640.jpg 500w" sizes="(max-width: 700px) 90vw, 70vw" width="500" height="374" alt="Digital memory devices reference 4 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-history-phase">
+<div>
+<h3>03 Social Platform Storage</h3>
+<dl>
+<div>
+<dt>Medium</dt>
+<dd>
+<p>Centralized internet servers (Web 2.0 databases).</p>
+</dd>
+</div>
+<div>
+<dt>Preservation Method</dt>
+<dd>
+<p>Active uploading and exhibition. Users carefully curate specific photos or text and manually &quot;publish&quot; them; the act of preservation is synonymous with the process of social sharing.</p>
+</dd>
+</div>
+<div>
+<dt>Ownership and Control</dt>
+<dd>
+<p>Platforms set the conditions for accessing shared content. Account restrictions, service changes, or technical failures can make those records inaccessible.</p>
+</dd>
+</div>
+</dl>
+</div>
+<div class="dd-media-objects">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/social-tablet-3200.jpg" data-zoom aria-label="View larger: Social platform storage reference 1 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/social-tablet-1600.jpg" srcset="../../assets/digital-decay/complete/social-tablet-640.jpg 640w, ../../assets/digital-decay/complete/social-tablet-1600.jpg 1240w" sizes="(max-width: 700px) 90vw, 70vw" width="1240" height="690" alt="Social platform storage reference 1 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/social-phone-3200.jpg" data-zoom aria-label="View larger: Social platform storage reference 2 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/social-phone-1600.jpg" srcset="../../assets/digital-decay/complete/social-phone-640.jpg 640w, ../../assets/digital-decay/complete/social-phone-1600.jpg 1600w, ../../assets/digital-decay/complete/social-phone-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Social platform storage reference 2 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/social-computer-3200.jpg" data-zoom aria-label="View larger: Social platform storage reference 3 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/social-computer-1600.jpg" srcset="../../assets/digital-decay/complete/social-computer-640.jpg 384w" sizes="(max-width: 700px) 90vw, 70vw" width="384" height="384" alt="Social platform storage reference 3 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-history-phase">
+<div>
+<h3>04 Cloud Auto-Sync</h3>
+<dl>
+<div>
+<dt>Medium</dt>
+<dd>
+<p>Distributed cloud data centers.</p>
+</dd>
+</div>
+<div>
+<dt>Preservation Method</dt>
+<dd>
+<p>Passive and seamless. Through background auto-sync, data is uploaded the moment it is created. Users no longer make intentional &quot;saving&quot; decisions, as all content is indiscriminately ingested into the cloud.</p>
+</dd>
+</div>
+<div>
+<dt>Ownership and Control</dt>
+<dd>
+<p>Automatic syncing reduces manual backup effort, while continued access depends on account status, service policies, and platform infrastructure.</p>
+</dd>
+</div>
+</dl>
+</div>
+<div class="dd-media-objects">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/cloud-laptop-3200.jpg" data-zoom aria-label="View larger: Cloud syncing services reference 1 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/cloud-laptop-1600.jpg" srcset="../../assets/digital-decay/complete/cloud-laptop-640.jpg 600w" sizes="(max-width: 700px) 90vw, 70vw" width="600" height="804" alt="Cloud syncing services reference 1 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/cloud-phone-3200.jpg" data-zoom aria-label="View larger: Cloud syncing services reference 2 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/cloud-phone-1600.jpg" srcset="../../assets/digital-decay/complete/cloud-phone-640.jpg 640w, ../../assets/digital-decay/complete/cloud-phone-1600.jpg 1200w" sizes="(max-width: 700px) 90vw, 70vw" width="1200" height="1200" alt="Cloud syncing services reference 2 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/cloud-assistant-3200.jpg" data-zoom aria-label="View larger: Cloud syncing services reference 3 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/cloud-assistant-1600.jpg" srcset="../../assets/digital-decay/complete/cloud-assistant-640.jpg 640w, ../../assets/digital-decay/complete/cloud-assistant-1600.jpg 1200w" sizes="(max-width: 700px) 90vw, 70vw" width="1200" height="675" alt="Cloud syncing services reference 3 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/cloud-infrastructure-3200.jpg" data-zoom aria-label="View larger: Cloud syncing services reference 4 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/cloud-infrastructure-1600.jpg" srcset="../../assets/digital-decay/complete/cloud-infrastructure-640.jpg 640w, ../../assets/digital-decay/complete/cloud-infrastructure-1600.jpg 1200w" sizes="(max-width: 700px) 90vw, 70vw" width="1200" height="952" alt="Cloud syncing services reference 4 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+<article class="dd-history-phase">
+<div>
+<h3>05 AI Memory Management</h3>
+<dl>
+<div>
+<dt>Medium</dt>
+<dd>
+<p>Latent spaces and machine learning models.</p>
+</dd>
+</div>
+<div>
+<dt>Preservation Method</dt>
+<dd>
+<p>Incessant, ambient capture. Users transition from active memory retrieval to passive consumption of AI-curated content.</p>
+</dd>
+</div>
+<div>
+<dt>Ownership and Control</dt>
+<dd>
+<p>AI increasingly mediates how records are organized, retrieved, and presented, giving platforms greater influence over which memories resurface and how they are interpreted.</p>
+</dd>
+</div>
+</dl>
+</div>
+<div class="dd-media-objects">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/ai-tablet-3200.jpg" data-zoom aria-label="View larger: AI-assisted memory services reference 1 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/ai-tablet-1600.jpg" srcset="../../assets/digital-decay/complete/ai-tablet-640.jpg 640w, ../../assets/digital-decay/complete/ai-tablet-1600.jpg 1000w" sizes="(max-width: 700px) 90vw, 70vw" width="1000" height="561" alt="AI-assisted memory services reference 1 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/ai-insights-3200.jpg" data-zoom aria-label="View larger: AI-assisted memory services reference 2 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/ai-insights-1600.jpg" srcset="../../assets/digital-decay/complete/ai-insights-640.jpg 640w, ../../assets/digital-decay/complete/ai-insights-1600.jpg 1200w" sizes="(max-width: 700px) 90vw, 70vw" width="1200" height="900" alt="AI-assisted memory services reference 2 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/ai-photos-3200.jpg" data-zoom aria-label="View larger: AI-assisted memory services reference 3 from the project timeline.">
+<img class="" src="../../assets/digital-decay/complete/ai-photos-1600.jpg" srcset="../../assets/digital-decay/complete/ai-photos-640.jpg 634w" sizes="(max-width: 700px) 90vw, 70vw" width="634" height="1159" alt="AI-assisted memory services reference 3 from the project timeline." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</article>
+</div>
+<div class="dd-history-observations">
+<p>Limited local storage and convenient network syncing entice users to surrender their physical storage media.</p>
+<p>Automatic synchronization lowers the barrier to entry, enticing users to gradually hand over their power to curate memories.</p>
+<p>As personal archives grow harder to manage manually, people may rely more on AI to organize and retrieve their records.</p>
+<p>Users are drawn step-by-step into passive memory management</p>
+</div>
+</section>
+<section id="research" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">04 / DIGITAL DECAY</span>
+<h2>Research</h2>
+</header>
+<section>
+<h3>Mechanisms of Human Forgetting</h3>
+<div class="dd-theories">
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/forgetting-trace-3200.jpg" data-zoom aria-label="View larger: Trace Decay Theory">
+<img class="" src="../../assets/digital-decay/complete/forgetting-trace-1600.jpg" srcset="../../assets/digital-decay/complete/forgetting-trace-640.jpg 535w" sizes="(max-width: 700px) 90vw, 70vw" width="535" height="535" alt="Trace Decay Theory" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Trace Decay Theory</h4>
+<p>Trace decay theory proposes that memory traces may weaken over time when they are not reactivated.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/forgetting-interference-3200.jpg" data-zoom aria-label="View larger: Interference Theory">
+<img class="" src="../../assets/digital-decay/complete/forgetting-interference-1600.jpg" srcset="../../assets/digital-decay/complete/forgetting-interference-640.jpg 516w" sizes="(max-width: 700px) 90vw, 70vw" width="516" height="523" alt="Interference Theory" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Interference Theory</h4>
+<p>Similar memories can interfere with each other. Earlier learning can make new information harder to recall, and new learning can make older information harder to recall.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/forgetting-retrieval-3200.jpg" data-zoom aria-label="View larger: Retrieval Failure Theory">
+<img class="" src="../../assets/digital-decay/complete/forgetting-retrieval-1600.jpg" srcset="../../assets/digital-decay/complete/forgetting-retrieval-640.jpg 562w" sizes="(max-width: 700px) 90vw, 70vw" width="562" height="508" alt="Retrieval Failure Theory" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Retrieval Failure Theory</h4>
+<p>A memory may be difficult to recall when relevant cues are absent. A familiar place, scent, or emotional state can help bring it back.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="dd-frontier">
+<h3>Frontier AI Research</h3>
+<div class="dd-frontier-list">
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/research-agent-3200.jpg" data-zoom aria-label="View larger: Agentic &amp; Self-Evolving AI">
+<img class="" src="../../assets/digital-decay/complete/research-agent-1600.jpg" srcset="../../assets/digital-decay/complete/research-agent-640.jpg 640w, ../../assets/digital-decay/complete/research-agent-1600.jpg 669w" sizes="(max-width: 700px) 90vw, 70vw" width="669" height="1023" alt="Agentic &amp; Self-Evolving AI" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Agentic &amp; Self-Evolving AI</h4>
+<p>Researchers are testing AI agents that improve their work through repeated trials and feedback. These agents can revise the code they generate or adjust their strategies based on the results.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/research-biological-3200.jpg" data-zoom aria-label="View larger: Biological AI &amp; Organoid Intelligence">
+<img class="" src="../../assets/digital-decay/complete/research-biological-1600.jpg" srcset="../../assets/digital-decay/complete/research-biological-640.jpg 640w, ../../assets/digital-decay/complete/research-biological-1600.jpg 736w" sizes="(max-width: 700px) 90vw, 70vw" width="736" height="736" alt="Biological AI &amp; Organoid Intelligence" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Biological AI &amp; Organoid Intelligence</h4>
+<p>Researchers are exploring whether lab-grown networks of brain cells can support computing. Early studies examine how these networks process signals and respond to feedback.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/research-embodied-3200.jpg" data-zoom aria-label="View larger: Embodied AI &amp; World Models">
+<img class="" src="../../assets/digital-decay/complete/research-embodied-1600.jpg" srcset="../../assets/digital-decay/complete/research-embodied-640.jpg 640w, ../../assets/digital-decay/complete/research-embodied-1600.jpg 720w" sizes="(max-width: 700px) 90vw, 70vw" width="720" height="1278" alt="Embodied AI &amp; World Models" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Embodied AI &amp; World Models</h4>
+<p>Embodied AI studies how agents perceive and act in their surroundings. World models can help them anticipate the effects of their actions and plan what to do next.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/research-frontier-3200.jpg" data-zoom aria-label="View larger: Jagged Technological Frontier">
+<img class="" src="../../assets/digital-decay/complete/research-frontier-1600.jpg" srcset="../../assets/digital-decay/complete/research-frontier-640.jpg 640w, ../../assets/digital-decay/complete/research-frontier-1600.jpg 800w" sizes="(max-width: 700px) 90vw, 70vw" width="800" height="800" alt="Jagged Technological Frontier" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Jagged Technological Frontier</h4>
+<p>AI can improve performance on some tasks and worsen it on others within the same workflow. Even tasks that appear equally difficult to people can fall on opposite sides of this boundary.</p>
+</div>
+</article>
+<article>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/research-quantum-3200.jpg" data-zoom aria-label="View larger: Quantum AI &amp; Hyper-scale Integration">
+<img class="" src="../../assets/digital-decay/complete/research-quantum-1600.jpg" srcset="../../assets/digital-decay/complete/research-quantum-640.jpg 640w, ../../assets/digital-decay/complete/research-quantum-1600.jpg 1024w" sizes="(max-width: 700px) 90vw, 70vw" width="1024" height="1024" alt="Quantum AI &amp; Hyper-scale Integration" loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<h4>Quantum AI &amp; Hyper-scale Integration</h4>
+<p>Researchers are exploring how quantum computing could support specific machine learning tasks. Its potential benefits for training and running large AI models remain uncertain.</p>
+</div>
+</article>
+</div>
+</section>
+</section>
+<section id="futures-triangle" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">05 / DIGITAL DECAY</span>
+<h2>Futures Triangle</h2>
+</header>
+<div class="dd-triangle-layout">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/futures-triangle-3200.jpg" data-zoom aria-label="View larger: Original futures-triangle composition showing the competing forces around memory management.">
+<img class="" src="../../assets/digital-decay/complete/futures-triangle-1600.jpg" srcset="../../assets/digital-decay/complete/futures-triangle-640.jpg 640w, ../../assets/digital-decay/complete/futures-triangle-1600.jpg 1426w" sizes="(max-width: 700px) 90vw, 70vw" width="1426" height="1527" alt="Original futures-triangle composition showing the competing forces around memory management." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div class="dd-forces">
+<article>
+<p class="eyebrow">Push</p>
+<h3>What is happening?</h3>
+<p>Explosive digital content growth has exceeded human limits, driving a shift to AI-assisted memory management. Default cloud syncing makes preservation passive, steadily reducing user control over data flow. Consequently, active personal curation is being replaced by automated AI and platform filtering.</p>
+</article>
+<article>
+<p class="eyebrow">Pull</p>
+<h3>What do we want?</h3>
+<p>We desire permanent cloud storage free from hardware limits. We expect AI to truly understand our retrieval intent, eliminating endless scrolling. Ultimately, we envision a frictionless, effortless experience without capacity limits, manual deletion, or active organization.</p>
+</article>
+<article>
+<p class="eyebrow">Weight</p>
+<h3>What is holding the future back?</h3>
+<p>We cling to the illusion of &quot;absolute ownership,&quot; mistakenly treating moderated clouds as private safes, while closed tech ecosystems restrict data mobility. Furthermore, human memory&#39;s emotional complexity defies quantifiable AI logic. We deeply fear delegating curation will cause algorithms to mistakenly &quot;forget&quot; precious memories lacking recognizable data traits.</p>
+</article>
+</div>
+</div>
+</section>
+<section id="futures-cone" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">06 / DIGITAL DECAY</span>
+<h2>Futures cone</h2>
+</header>
+<figure class="dd-figure dd-cone-image">
+<a class="image-link" href="../../assets/digital-decay/complete/futures-cone-3200.jpg" data-zoom aria-label="View larger: Futures-cone eye illustration with three numbered future horizons.">
+<img class="" src="../../assets/digital-decay/complete/futures-cone-1600.jpg" srcset="../../assets/digital-decay/complete/futures-cone-640.jpg 640w, ../../assets/digital-decay/complete/futures-cone-1600.jpg 1600w, ../../assets/digital-decay/complete/futures-cone-3200.jpg 1699w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="721" alt="Futures-cone eye illustration with three numbered future horizons." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Three future horizons explored in the portfolio.</figcaption>
+</figure>
+<ol class="dd-futures">
+<li>
+<span class="dd-future-number">01</span>
+<div>
+<h3>Probable Future</h3>
+<p>AI could evolve from an organizing tool into a memory assistant that uses information about events, places, and relationships to help people revisit their past. By using natural language, users can rely on AI to actively retrieve and filter memories across multiple data points. The system could identify redundant or low-quality photos and suggest actions, leaving the final decision to the user. Automatically generated recaps further reduce manual organization, marking a shift from managing memories independently to managing them with AI assistance.</p>
+</div>
+</li>
+<li>
+<span class="dd-future-number">02</span>
+<div>
+<h3>Plausible Future</h3>
+<p>AI could combine records from different sources into an evolving personal memory model and use it to decide which memories to prioritize. The system could rank records by estimated importance and use them to reconstruct past experiences when users search their archives. What appears first could reflect algorithmic biases and commercial incentives, subtly shaping how people understand their past. When AI takes over the editorial control of our memories, are we remembering our actual past, or an algorithmic reconstruction curated for us?</p>
+</div>
+</li>
+<li>
+<span class="dd-future-number">03</span>
+<div>
+<h3>Possible Future</h3>
+<p>Platforms could delegate most decisions about digital memories to AI, including the deletion of records rated as low value without the user’s knowledge. As platforms compress and reorganize records to reduce storage costs and respond to users’ emotional states, original records could become harder to access. People may increasingly revisit their past through personal narratives assembled by algorithms. By shaping which memories resurface, AI could influence how people understand their own past.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="future-background" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">07 / DIGITAL DECAY</span>
+<h2>Future Background</h2>
+</header>
+<h3>A Future Society Scenario: From “Helping Us Organize” to “Deciding for Us”</h3>
+<p class="dd-fiction-label">Speculative future scenario · 2031</p>
+<div class="dd-scenario">
+<div class="dd-reading">
+<p>As photos, videos, chats, and voice recordings accumulate, people struggle to organize them. Platforms introduce “personal memory assistants” that recognize people, places, events, and emotions, then generate albums and annual recaps. Although original files remain accessible, most users begin relying on AI-curated results.</p>
+<p>Meanwhile, growing data volumes raise the cost of storage, processing, interpretation, and retrieval. Preserving everything in full becomes increasingly expensive.</p>
+<p>At this stage, AI still helps people organize and find memories, but it does not yet decide for them.</p>
+</div>
+<div class="dd-gallery dd-storyboards">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-01a-3200.jpg" data-zoom aria-label="View larger: Future scenario 1, storyboard 1 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-01a-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-01a-640.jpg 640w, ../../assets/digital-decay/complete/scenario-01a-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 1, storyboard 1 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-01b-3200.jpg" data-zoom aria-label="View larger: Future scenario 1, storyboard 2 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-01b-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-01b-640.jpg 640w, ../../assets/digital-decay/complete/scenario-01b-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 1, storyboard 2 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-01c-3200.jpg" data-zoom aria-label="View larger: Future scenario 1, storyboard 3 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-01c-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-01c-640.jpg 640w, ../../assets/digital-decay/complete/scenario-01c-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 1, storyboard 3 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-01d-3200.jpg" data-zoom aria-label="View larger: Future scenario 1, storyboard 4 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-01d-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-01d-640.jpg 640w, ../../assets/digital-decay/complete/scenario-01d-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 1, storyboard 4 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</div>
+<div class="dd-scenario">
+<div class="dd-reading">
+<p>To provide a more integrated service, AI connects photos, chat histories, calendars, location data, purchase histories, and health information to create a continuously updated personal life timeline.</p>
+<p>The system ranks memories using factors such as image quality, similarity, and scene significance. Repetitive, blurry, or “low-value” records are hidden, compressed, or stored at reduced quality to save cloud space. As storage costs rise, platforms increase subscription prices, requiring users to pay more for greater capacity and more complete digital archives.</p>
+<p>AI no longer simply organizes memories. It begins deciding what is worth preserving.</p>
+</div>
+<div class="dd-gallery dd-storyboards">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-02a-3200.jpg" data-zoom aria-label="View larger: Future scenario 2, storyboard 1 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-02a-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-02a-640.jpg 640w, ../../assets/digital-decay/complete/scenario-02a-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 2, storyboard 1 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-02b-3200.jpg" data-zoom aria-label="View larger: Future scenario 2, storyboard 2 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-02b-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-02b-640.jpg 640w, ../../assets/digital-decay/complete/scenario-02b-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 2, storyboard 2 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-02c-3200.jpg" data-zoom aria-label="View larger: Future scenario 2, storyboard 3 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-02c-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-02c-640.jpg 640w, ../../assets/digital-decay/complete/scenario-02c-1600.jpg 1584w" sizes="(max-width: 700px) 90vw, 70vw" width="1584" height="993" alt="Future scenario 2, storyboard 3 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-02d-3200.jpg" data-zoom aria-label="View larger: Future scenario 2, storyboard 4 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-02d-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-02d-640.jpg 640w, ../../assets/digital-decay/complete/scenario-02d-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 2, storyboard 4 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</div>
+<div class="dd-scenario">
+<div class="dd-reading">
+<p>By 2030, as personal archives expand, users stop browsing original files and rely on AI summaries and automatic recaps. Platforms realize that accessing and interpreting the past matters more than owning the files.</p>
+<p>By 2031, AI becomes the main gateway to personal memories. Algorithms decide what is preserved, compressed, or prevented from resurfacing. Subscription tiers determine storage capacity and access to contextual links and advanced search, shaping how fully people can revisit their past.  Platforms have different priorities and business goals, so their AI systems may retell the same experience in different ways.</p>
+<p>AI no longer simply organizes memories. It begins interpreting them. What people can see of their past increasingly depends on their platform, AI model, and ability to pay.</p>
+</div>
+<div class="dd-gallery dd-storyboards">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-03a-3200.jpg" data-zoom aria-label="View larger: Future scenario 3, storyboard 1 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-03a-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-03a-640.jpg 640w, ../../assets/digital-decay/complete/scenario-03a-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 3, storyboard 1 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-03b-3200.jpg" data-zoom aria-label="View larger: Future scenario 3, storyboard 2 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-03b-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-03b-640.jpg 640w, ../../assets/digital-decay/complete/scenario-03b-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 3, storyboard 2 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-03c-3200.jpg" data-zoom aria-label="View larger: Future scenario 3, storyboard 3 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-03c-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-03c-640.jpg 640w, ../../assets/digital-decay/complete/scenario-03c-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 3, storyboard 3 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/scenario-03d-3200.jpg" data-zoom aria-label="View larger: Future scenario 3, storyboard 4 from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/scenario-03d-1600.jpg" srcset="../../assets/digital-decay/complete/scenario-03d-640.jpg 640w, ../../assets/digital-decay/complete/scenario-03d-1600.jpg 1586w" sizes="(max-width: 700px) 90vw, 70vw" width="1586" height="992" alt="Future scenario 3, storyboard 4 from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+</div>
+</section>
+<section id="design-concept" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">08 / DIGITAL DECAY</span>
+<h2>Design Concept</h2>
+</header>
+<div class="dd-reading dd-lead">
+<p>The project combines a subscription framework with a digital memory interface to explore how AI and platform rules shape access to the past.</p>
+</div>
+<div class="dd-concept-parts">
+<article>
+<h3>Part 1 Membership Framework</h3>
+<p>A tiered service that defines users’ rights to preserve and access their digital memories.</p>
+<ol class="dd-pyramid" aria-label="Free, Basic, Plus and Premium membership levels">
+<li>Premium Membership</li>
+<li>Plus Membership</li>
+<li>Basic Membership</li>
+<li>Free Membership</li>
+</ol>
+</article>
+<article>
+<h3>Part 2 Memory Management Website</h3>
+<p>Set in 2031, the website allows users to view and manage the lifecycle of their digital memories, revealing what remains, what is fading, and what they can still protect.</p>
+<ol class="dd-mini-stages">
+<li>
+<span>01</span>Fully Preserved</li>
+<li>
+<span>02</span>Early Decay</li>
+<li>
+<span>03</span>Compressed</li>
+<li>
+<span>04</span>Progressive Image Loss</li>
+<li>
+<span>05</span>Summary Only</li>
+<li>
+<span>06</span>Unrecoverable</li>
+</ol>
+</article>
+</div>
+</section>
+<section id="membership" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">09 / DIGITAL DECAY</span>
+<h2>Part 1: Membership Framework</h2>
+</header>
+<div class="dd-reading dd-lead">
+<p>Membership defines the conditions under which personal memories are preserved and accessed.</p>
+</div>
+<h3>The service framework considers six dimensions</h3>
+<ol class="dd-service-dimensions">
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-retention-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-retention-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension retention" loading="lazy" decoding="async">
+<span>01</span>
+<h4>Original file retention</h4>
+</li>
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-context-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-context-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension context" loading="lazy" decoding="async">
+<span>02</span>
+<h4>Context Completeness</h4>
+</li>
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-search-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-search-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension search" loading="lazy" decoding="async">
+<span>03</span>
+<h4>AI search capabilities</h4>
+</li>
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-summary-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-summary-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension summary" loading="lazy" decoding="async">
+<span>04</span>
+<h4>AI memory summaries</h4>
+</li>
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-alerts-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-alerts-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension alerts" loading="lazy" decoding="async">
+<span>05</span>
+<h4>Advance notice of memory decay</h4>
+</li>
+<li>
+<img class="" src="../../assets/digital-decay/complete/dimension-capacity-1600.jpg" srcset="../../assets/digital-decay/complete/dimension-capacity-640.jpg 512w" sizes="64px" width="512" height="512" alt="dimension capacity" loading="lazy" decoding="async">
+<span>06</span>
+<h4>Cloud storage capacity</h4>
+</li>
+</ol>
+<div class="dd-reading">
+<p>The Free tier provides 10 TB of storage, basic people and place tags, brief descriptions of individual photos, and basic search. It does not include recommendations, associative search, or event linking.</p>
+<p>Basic (100 TB), Plus (500 TB), and Premium (1000 TB)  add event summaries, connections between memories from related events, people and place searches, recommendations, and associative search.</p>
+<p>All tiers include the same basic AI model and advance decay alerts. Original files are kept for at least one year from their first upload.</p>
+</div>
+<h3>Membership Tiers</h3>
+<p class="dd-fiction-label">Fictional service framework · Prices not set</p>
+<div class="dd-memberships">
+<article>
+<span class="eyebrow">01</span>
+<h4>Free Membership</h4>
+<p class="dd-capacity">10 <span>TB</span>
+</p>
+<p class="dd-tier-price">Free</p>
+<h5>AI &amp; summaries</h5>
+<ul>
+<li>Basic AI</li>
+<li>People and place tags</li>
+<li>Brief descriptions of individual photos</li>
+</ul>
+<h5>Search &amp; connections</h5>
+<ul>
+<li>Basic search</li>
+<li>No recommendations, associative search or event linking</li>
+</ul>
+<h5>Original file retention</h5>
+<p>Original files retained for at least 1 year</p>
+</article>
+<article>
+<span class="eyebrow">02</span>
+<h4>Basic Membership</h4>
+<p class="dd-capacity">100 <span>TB</span>
+</p>
+<p class="dd-tier-price">Price to be confirmed</p>
+<h5>AI &amp; summaries</h5>
+<ul>
+<li>Basic AI</li>
+<li>Event summaries</li>
+</ul>
+<h5>Search &amp; connections</h5>
+<ul>
+<li>Event linking</li>
+<li>Search by people and place tags</li>
+<li>Recommendations and associative search</li>
+</ul>
+<h5>Original file retention</h5>
+<p>Original files retained for at least 1 year</p>
+</article>
+<article>
+<span class="eyebrow">03</span>
+<h4>Plus Membership</h4>
+<p class="dd-capacity">500 <span>TB</span>
+</p>
+<p class="dd-tier-price">Price to be confirmed</p>
+<h5>AI &amp; summaries</h5>
+<ul>
+<li>Basic AI</li>
+<li>Event summaries</li>
+</ul>
+<h5>Search &amp; connections</h5>
+<ul>
+<li>Event linking</li>
+<li>Search by people and place tags</li>
+<li>Recommendations and associative search</li>
+</ul>
+<h5>Original file retention</h5>
+<p>Original files retained for at least 1 year</p>
+</article>
+<article>
+<span class="eyebrow">04</span>
+<h4>Premium Membership</h4>
+<p class="dd-capacity">1000 <span>TB</span>
+</p>
+<p class="dd-tier-price">Price to be confirmed</p>
+<h5>AI &amp; summaries</h5>
+<ul>
+<li>Basic AI</li>
+<li>Event summaries</li>
+</ul>
+<h5>Search &amp; connections</h5>
+<ul>
+<li>Event linking</li>
+<li>Search by people and place tags</li>
+<li>Recommendations and associative search</li>
+</ul>
+<h5>Original file retention</h5>
+<p>Original files retained for at least 1 year</p>
+</article>
+</div>
+</section>
+<section id="website-design" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">10 / DIGITAL DECAY</span>
+<h2>Part 2: Website Design</h2>
+</header>
+<div class="dd-reading">
+<p>Set in 2031, this speculative website explores a future in which AI is the main gateway to managing, retrieving and interpreting personal memories. The platform determines how memories are preserved based on usage patterns, content characteristics, relationship networks and available storage.</p>
+<p>The interface helps users answer four questions:</p>
+<ul class="dd-four-questions">
+<li>What remains of my memories?</li>
+<li>What is changing, or about to change?</li>
+<li>Why has the system decided to make this change?</li>
+<li>What can I still do?</li>
+</ul>
+<p>Alerts about upcoming irreversible changes give users a reason to return. The homepage directs them to memories that need attention, explains the system’s assessment and presents the actions still available.</p>
+<p>Users can intervene in future decay, but cannot reverse past loss. Even a paid subscription and “Preserve Current State” do not guarantee permanent protection: prolonged inactivity may still lead the AI to withdraw it.</p>
+</div>
+<h3>Six Stages of Memory Decay</h3>
+<ol class="dd-stage-studies">
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-1-3200.jpg" data-zoom aria-label="View larger: Fully Preserved wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-1-1600.jpg" srcset="../../assets/digital-decay/complete/stage-1-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Fully Preserved wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">01</p>
+<h4>Fully Preserved</h4>
+<p class="dd-stage-summary">Full photo and surviving context</p>
+<p>The complete photo and its remaining contextual information are accessible. View, revisit and manage the memory.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>View Original · Preserve Current State</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">Protection preserves the complete version currently available.</p>
+</div>
+</li>
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-2-3200.jpg" data-zoom aria-label="View larger: Early Decay wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-2-1600.jpg" srcset="../../assets/digital-decay/complete/stage-2-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Early Decay wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">02</p>
+<h4>Early Decay</h4>
+<p class="dd-stage-summary">Next: compression · 18h remaining</p>
+<p>The current image has already sustained mild damage. Small shifts, fractures and grain make the loss visible.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>Preserve Current State · Pause for 30 Days</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">The next change and countdown are shown. Protection freezes this exact surviving version.</p>
+</div>
+</li>
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-3-3200.jpg" data-zoom aria-label="View larger: Compressed wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-3-1600.jpg" srcset="../../assets/digital-decay/complete/stage-3-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Compressed wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">03</p>
+<h4>Compressed</h4>
+<p class="dd-stage-summary">Reduced quality or resolution</p>
+<p>The image remains recognizable, but resolution, clarity or detail has been reduced.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>Preserve Current State · Pause for 30 Days</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">Preservation keeps only the current compressed version. Lost quality cannot be restored.</p>
+</div>
+</li>
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-4-3200.jpg" data-zoom aria-label="View larger: Progressive Image Loss wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-4-1600.jpg" srcset="../../assets/digital-decay/complete/stage-4-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Progressive Image Loss wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">04</p>
+<h4>Progressive Image Loss</h4>
+<p class="dd-stage-summary">Fewer fragments remain accessible</p>
+<p>Image fragments and contextual information continue to disappear. Gaps, displacement and stretching intensify.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>Preserve Current State · Pause for 30 Days</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">Preservation and a 30-day pause freeze the exact remaining image, not just the stage label.</p>
+</div>
+</li>
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-5-3200.jpg" data-zoom aria-label="View larger: Summary Only wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-5-1600.jpg" srcset="../../assets/digital-decay/complete/stage-5-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Summary Only wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">05</p>
+<h4>Summary Only</h4>
+<p class="dd-stage-summary">Photo unavailable · summary remains</p>
+<p>Only an AI-generated summary and some linked information remain. A summary card replaces the photo.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>Preserve Current State · Pause for 30 Days</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">The surviving summary and context can still be preserved or paused. The photo cannot be restored.</p>
+<blockquote>“That day, you passed the clock tower. The AI describes this memory as an ordinary walk through the city.”</blockquote>
+</div>
+</li>
+<li>
+<div class="dd-stage-image">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/stage-6-3200.jpg" data-zoom aria-label="View larger: Unrecoverable wireframe from the portfolio.">
+<img class="" src="../../assets/digital-decay/complete/stage-6-1600.jpg" srcset="../../assets/digital-decay/complete/stage-6-640.jpg 547w" sizes="(max-width: 700px) 90vw, 70vw" width="547" height="656" alt="Unrecoverable wireframe from the portfolio." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</div>
+<div>
+<p class="eyebrow">06</p>
+<h4>Unrecoverable</h4>
+<p class="dd-stage-summary">PH02042024 · content inaccessible</p>
+<p>The photo and summary are inaccessible. Only an ID, black placeholder, event keyword index and processing log remain.</p>
+<dl>
+<div>
+<dt>Available controls</dt>
+<dd>View Processing Log · Back to Photo Wall</dd>
+</div>
+</dl>
+<p class="dd-stage-rule">Event keywords can still find this empty placeholder. Preservation and pause controls are no longer available.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="assessment" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">11 / DIGITAL DECAY</span>
+<h2>AI Memory Lifecycle Assessment Criteria</h2>
+</header>
+<div class="dd-table-scroll" tabindex="0" role="region" aria-label="Memory lifecycle assessment criteria">
+<table>
+<thead>
+<tr>
+<th scope="col">No.</th>
+<th scope="col">Dimension</th>
+<th scope="col">Initial A/B/C categories</th>
+<th scope="col">Conflict priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Time since last viewed</td>
+<td>A: 1 year; B: 6 months; C: 3 months</td>
+<td>Primary</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Remaining storage</td>
+<td>A: 90%; B: 60%; C: 30%</td>
+<td>Primary</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>Image similarity</td>
+<td>A: 90%; B: 60%; C: 30%</td>
+<td>Supporting</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>Image quality</td>
+<td>A: 90%; B: 60%; C: 30%</td>
+<td>Supporting</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>Scene significance</td>
+<td>A: 90%; B: 60%; C: 30%</td>
+<td>Supporting</td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>People’s appearance frequency / relationship network</td>
+<td>Relationship closeness: A: 90%; B: 60%; C: 30%</td>
+<td>Primary</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="dd-combination-model">
+<h3>Initial Combination Model</h3>
+<div class="dd-reading">
+<p>The initial model combines <strong>three of the six dimensions at a time</strong>, producing <strong>20 dimension groups and 540 A/B/C configurations</strong>. For example, <strong>1A + 2A + 6A → Early Decay</strong> illustrates an initial mapping.</p>
+<p>These combinations provide a starting point for linking assessments to decay risk, preservation stages and countdowns. Reassessment may change future risk and timing, but <strong>cannot return a memory to a more complete stage</strong>.</p>
+</div>
+<div class="dd-table-scroll" tabindex="0" role="region" aria-label="Initial model combination counts">
+<table>
+<caption>Initial combination model · Distribution shown in the portfolio</caption>
+<thead>
+<tr>
+<th scope="col">Fully Preserved</th>
+<th scope="col">Early Decay</th>
+<th scope="col">Compressed</th>
+<th scope="col">Progressive Image Loss</th>
+<th scope="col">Summary Only</th>
+<th scope="col">Unrecoverable</th>
+<th scope="col">Total combinations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>107</td>
+<td>75</td>
+<td>122</td>
+<td>66</td>
+<td>87</td>
+<td>83</td>
+<td>540</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="dd-figure dd-model-excerpt">
+<a class="image-link" href="../../assets/digital-decay/complete/combination-model-3200.jpg" data-zoom aria-label="View larger: Initial combination-model spreadsheet showing stage counts and rows 527–540.">
+<img class="" src="../../assets/digital-decay/complete/combination-model-1600.jpg" srcset="../../assets/digital-decay/complete/combination-model-640.jpg 640w, ../../assets/digital-decay/complete/combination-model-1600.jpg 1600w, ../../assets/digital-decay/complete/combination-model-3200.jpg 2016w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="530" alt="Initial combination-model spreadsheet showing stage counts and rows 527–540." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Original spreadsheet excerpt: 540 configurations in total; rows 527–540 are the rows displayed in the portfolio.</figcaption>
+</figure>
+<details class="dd-model-data">
+<summary>Read the displayed spreadsheet rows as a table</summary>
+<div class="dd-table-scroll" tabindex="0" role="region" aria-label="Spreadsheet rows 527 to 540">
+<table>
+<thead>
+<tr>
+<th scope="col">Row ID</th>
+<th scope="col">Dimension group</th>
+<th scope="col">Condition 1</th>
+<th scope="col">Condition 2</th>
+<th scope="col">Condition 3</th>
+<th scope="col">Assessment combination</th>
+<th scope="col">Target ID</th>
+<th scope="col">Target state</th>
+<th scope="col">Decay index</th>
+<th scope="col">Primary dimension count</th>
+<th scope="col">Primary risk total</th>
+<th scope="col">Supporting risk total</th>
+<th scope="col">Weighted risk sum</th>
+<th scope="col">Total weight</th>
+<th scope="col">Condition details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">527</th>
+<td>3+4+5</td>
+<td>3B</td>
+<td>4B</td>
+<td>5B</td>
+<td>3B+4B+5B</td>
+<td>3</td>
+<td>Compressed</td>
+<td>3.0000</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Similarity: 60%; Image quality: 60%; Scene importance: 60%</td>
+</tr>
+<tr>
+<th scope="row">528</th>
+<td>3+4+5</td>
+<td>3B</td>
+<td>4B</td>
+<td>5C</td>
+<td>3B+4B+5C</td>
+<td>4</td>
+<td>Progressive Image Loss</td>
+<td>4.0000</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>Similarity: 60%; Image quality: 60%; Scene importance: 30%</td>
+</tr>
+<tr>
+<th scope="row">529</th>
+<td>3+4+5</td>
+<td>3B</td>
+<td>4C</td>
+<td>5A</td>
+<td>3B+4C+5A</td>
+<td>3</td>
+<td>Compressed</td>
+<td>3.0000</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Similarity: 60%; Image quality: 30%; Scene importance: 90%</td>
+</tr>
+<tr>
+<th scope="row">530</th>
+<td>3+4+5</td>
+<td>3B</td>
+<td>4C</td>
+<td>5B</td>
+<td>3B+4C+5B</td>
+<td>4</td>
+<td>Progressive Image Loss</td>
+<td>4.0000</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>Similarity: 60%; Image quality: 30%; Scene importance: 60%</td>
+</tr>
+<tr>
+<th scope="row">531</th>
+<td>3+4+5</td>
+<td>3B</td>
+<td>4C</td>
+<td>5C</td>
+<td>3B+4C+5C</td>
+<td>5</td>
+<td>Summary Only</td>
+<td>5.0000</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>Similarity: 60%; Image quality: 30%; Scene importance: 30%</td>
+</tr>
+<tr>
+<th scope="row">532</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4A</td>
+<td>5A</td>
+<td>3C+4A+5A</td>
+<td>1</td>
+<td>Fully Preserved</td>
+<td>0.0000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 90%; Scene importance: 90%</td>
+</tr>
+<tr>
+<th scope="row">533</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4A</td>
+<td>5B</td>
+<td>3C+4A+5B</td>
+<td>1</td>
+<td>Fully Preserved</td>
+<td>1.0000</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 90%; Scene importance: 60%</td>
+</tr>
+<tr>
+<th scope="row">534</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4A</td>
+<td>5C</td>
+<td>3C+4A+5C</td>
+<td>2</td>
+<td>Early Decay</td>
+<td>2.0000</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 90%; Scene importance: 30%</td>
+</tr>
+<tr>
+<th scope="row">535</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4B</td>
+<td>5A</td>
+<td>3C+4B+5A</td>
+<td>1</td>
+<td>Fully Preserved</td>
+<td>1.0000</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 60%; Scene importance: 90%</td>
+</tr>
+<tr>
+<th scope="row">536</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4B</td>
+<td>5B</td>
+<td>3C+4B+5B</td>
+<td>2</td>
+<td>Early Decay</td>
+<td>2.0000</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 60%; Scene importance: 60%</td>
+</tr>
+<tr>
+<th scope="row">537</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4B</td>
+<td>5C</td>
+<td>3C+4B+5C</td>
+<td>3</td>
+<td>Compressed</td>
+<td>3.0000</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 60%; Scene importance: 30%</td>
+</tr>
+<tr>
+<th scope="row">538</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4C</td>
+<td>5A</td>
+<td>3C+4C+5A</td>
+<td>2</td>
+<td>Early Decay</td>
+<td>2.0000</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 30%; Scene importance: 90%</td>
+</tr>
+<tr>
+<th scope="row">539</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4C</td>
+<td>5B</td>
+<td>3C+4C+5B</td>
+<td>3</td>
+<td>Compressed</td>
+<td>3.0000</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 30%; Scene importance: 60%</td>
+</tr>
+<tr>
+<th scope="row">540</th>
+<td>3+4+5</td>
+<td>3C</td>
+<td>4C</td>
+<td>5C</td>
+<td>3C+4C+5C</td>
+<td>4</td>
+<td>Progressive Image Loss</td>
+<td>4.0000</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>Similarity: 30%; Image quality: 30%; Scene importance: 30%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</section>
+</section>
+<section id="interface-flow" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">12 / DIGITAL DECAY</span>
+<h2>Interface Flow</h2>
+</header>
+<details class="dd-flow-map">
+<summary>View the complete interface relationship diagram</summary>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/interface-map-3200.jpg" data-zoom aria-label="View larger: Complete original wireframe relationship diagram, including connections between all thirteen interface nodes.">
+<img class="" src="../../assets/digital-decay/complete/interface-map-1600.jpg" srcset="../../assets/digital-decay/complete/interface-map-640.jpg 640w, ../../assets/digital-decay/complete/interface-map-1600.jpg 1600w, ../../assets/digital-decay/complete/interface-map-3200.jpg 3200w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="564" alt="Complete original wireframe relationship diagram, including connections between all thirteen interface nodes." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>The overall relationship diagram from the portfolio. Individual screens and their descriptions follow below.</figcaption>
+</figure>
+</details>
+<ol class="dd-flow-studies">
+<li>
+<div class="dd-flow-copy">
+<h3>01 / Photo wall</h3>
+<p>01 / Provides an interactive overview of the memory archive, showing preservation states and highlighting memories approaching further loss.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-01-3200.jpg" data-zoom aria-label="View larger: 01 / Photo wall — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-01-1600.jpg" srcset="../../assets/digital-decay/complete/flow-01-640.jpg 640w, ../../assets/digital-decay/complete/flow-01-1600.jpg 1430w" sizes="(max-width: 700px) 90vw, 70vw" width="1430" height="801" alt="01 / Photo wall — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>02 / Account &amp; current plan</h3>
+<p>02/ Summarizes the user’s current membership, storage usage, AI tools and retention benefits.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-02-3200.jpg" data-zoom aria-label="View larger: 02 / Account &amp; current plan — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-02-1600.jpg" srcset="../../assets/digital-decay/complete/flow-02-640.jpg 391w" sizes="(max-width: 700px) 90vw, 70vw" width="391" height="469" alt="02 / Account &amp; current plan — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>03 / Memories requiring attention</h3>
+<p>03 / Lists memories approaching their next decay stage, helping users prioritize timely intervention.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-03-3200.jpg" data-zoom aria-label="View larger: 03 / Memories requiring attention — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-03-1600.jpg" srcset="../../assets/digital-decay/complete/flow-03-640.jpg 640w, ../../assets/digital-decay/complete/flow-03-1600.jpg 1320w" sizes="(max-width: 700px) 90vw, 70vw" width="1320" height="734" alt="03 / Memories requiring attention — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>04 / Photo detail</h3>
+<p>04 / Shows the surviving version, upcoming changes and assessment reasons, with options to preserve the current state or pause decay for 30 days.</p>
+<p class="dd-rule-note">All users can pause a photo’s decay and countdown for 30 days once per eligible stage, freezing its current version without restoring lost content.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-04-3200.jpg" data-zoom aria-label="View larger: 04 / Photo detail — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-04-1600.jpg" srcset="../../assets/digital-decay/complete/flow-04-640.jpg 640w, ../../assets/digital-decay/complete/flow-04-1600.jpg 1266w" sizes="(max-width: 700px) 90vw, 70vw" width="1266" height="730" alt="04 / Photo detail — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>05 / Floating search results</h3>
+<p>05 / Displays matching photos, summaries and unavailable-memory placeholders in a floating window</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-05-3200.jpg" data-zoom aria-label="View larger: 05 / Floating search results — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-05-1600.jpg" srcset="../../assets/digital-decay/complete/flow-05-640.jpg 441w" sizes="(max-width: 700px) 90vw, 70vw" width="441" height="320" alt="05 / Floating search results — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>06 / Assessment basis</h3>
+<p>06 / Presents recorded evidence and AI inferences so users can understand the reasons for decay and correct the AI’s judgments.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-06-3200.jpg" data-zoom aria-label="View larger: 06 / Assessment basis — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-06-1600.jpg" srcset="../../assets/digital-decay/complete/flow-06-640.jpg 477w" sizes="(max-width: 700px) 90vw, 70vw" width="477" height="543" alt="06 / Assessment basis — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>07 / Compare similar photos</h3>
+<p>07 / Lets users select preferred photos from similar images to raise their preservation priority without automatically pausing decay.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-07-3200.jpg" data-zoom aria-label="View larger: 07 / Compare similar photos — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-07-1600.jpg" srcset="../../assets/digital-decay/complete/flow-07-640.jpg 488w" sizes="(max-width: 700px) 90vw, 70vw" width="488" height="555" alt="07 / Compare similar photos — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>08 / Corrected AI assessment</h3>
+<p>08 / Shows corrected emotional and relationship assessments before users confirm a reassessment of decay risk, preservation priority and timing.</p>
+<p class="dd-rule-note">Users can correct AI judgments or select preferred photos from similar sets, prompting a reassessment of decay risk, preservation priority and timing without automatically pausing decay or restoring lost content.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-08-3200.jpg" data-zoom aria-label="View larger: 08 / Corrected AI assessment — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-08-1600.jpg" srcset="../../assets/digital-decay/complete/flow-08-640.jpg 488w" sizes="(max-width: 700px) 90vw, 70vw" width="488" height="543" alt="08 / Corrected AI assessment — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>09 / Related memories</h3>
+<p>09 / Displays related memories to help users understand the selected photo’s wider context.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-09-3200.jpg" data-zoom aria-label="View larger: 09 / Related memories — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-09-1600.jpg" srcset="../../assets/digital-decay/complete/flow-09-640.jpg 367w" sizes="(max-width: 700px) 90vw, 70vw" width="367" height="465" alt="09 / Related memories — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>10 / Protection unavailable</h3>
+<p>10 / Explains why storage pressure and higher-priority memories prevent protection, with a link to compare membership options.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-10-3200.jpg" data-zoom aria-label="View larger: 10 / Protection unavailable — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-10-1600.jpg" srcset="../../assets/digital-decay/complete/flow-10-640.jpg 441w" sizes="(max-width: 700px) 90vw, 70vw" width="441" height="496" alt="10 / Protection unavailable — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>11 / Compare membership options</h3>
+<p>11 / Compares storage capacity, search and context access, retention terms and costs across membership options.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-11-3200.jpg" data-zoom aria-label="View larger: 11 / Compare membership options — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-11-1600.jpg" srcset="../../assets/digital-decay/complete/flow-11-640.jpg 590w" sizes="(max-width: 700px) 90vw, 70vw" width="590" height="477" alt="11 / Compare membership options — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>12 / Protection after capacity update</h3>
+<p>12 / Lets users confirm protection for the current surviving version once additional storage becomes available.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-12-3200.jpg" data-zoom aria-label="View larger: 12 / Protection after capacity update — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-12-1600.jpg" srcset="../../assets/digital-decay/complete/flow-12-640.jpg 438w" sizes="(max-width: 700px) 90vw, 70vw" width="438" height="434" alt="12 / Protection after capacity update — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+<li>
+<div class="dd-flow-copy">
+<h3>13 / Lifecycle log</h3>
+<p>13 / Records the memory’s preservation stages and when each change occurred.</p>
+</div>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/flow-13-3200.jpg" data-zoom aria-label="View larger: 13 / Lifecycle log  — original wireframe.">
+<img class="" src="../../assets/digital-decay/complete/flow-13-1600.jpg" srcset="../../assets/digital-decay/complete/flow-13-640.jpg 480w" sizes="(max-width: 700px) 90vw, 70vw" width="480" height="172" alt="13 / Lifecycle log  — original wireframe." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+</li>
+</ol>
+</section>
+<section id="coding" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">13 / DIGITAL DECAY</span>
+<h2>Coding</h2>
+</header>
+<div class="dd-reading">
+<p>The website’s code was developed with assistance from an AI coding agent.</p>
+<p>I worked with an AI agent to implement my interaction framework and memory decay rules as a working web prototype. I defined the design requirements and guided revisions through testing and feedback.</p>
+</div>
+<div class="dd-coding-layout">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/code-files-3200.jpg" data-zoom aria-label="View larger: Project file tree shown in the original making documentation.">
+<img class="" src="../../assets/digital-decay/complete/code-files-1600.jpg" srcset="../../assets/digital-decay/complete/code-files-640.jpg 314w" sizes="(max-width: 700px) 90vw, 70vw" width="314" height="972" alt="Project file tree shown in the original making documentation." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+</figure>
+<div>
+<p>Built with React and TypeScript, the prototype uses App.tsx to manage views and state. PhotoWall handles navigation and gestures, while PhotoContent renders memories by decay stage. Preset rules simulate AI assessments.</p>
+<p>Translating memory decay into six interface states: intact photographs give way to fragmented images, AI summaries, and placeholders marked “Index retained.”</p>
+</div>
+</div>
+<figure class="dd-figure dd-code-excerpt">
+<a class="image-link" href="../../assets/digital-decay/complete/code-rendering-3200.jpg" data-zoom aria-label="View larger: Code excerpt from the original React and TypeScript prototype, showing how the photo content and interactions are rendered.">
+<img class="" src="../../assets/digital-decay/complete/code-rendering-1600.jpg" srcset="../../assets/digital-decay/complete/code-rendering-640.jpg 640w, ../../assets/digital-decay/complete/code-rendering-1600.jpg 1461w" sizes="(max-width: 700px) 90vw, 70vw" width="1461" height="1060" alt="Code excerpt from the original React and TypeScript prototype, showing how the photo content and interactions are rendered." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Code excerpt included in the project’s making documentation.</figcaption>
+</figure>
+<div class="dd-reading">
+<p>With limited coding experience, I initially struggled to locate bugs and give the AI agent precise instructions. I asked it to explain the code structure and walk me through the interactions, helping me understand the code for displaying photos, dragging individual photos, panning and zooming the photo wall, and styling the interface. I then described each issue through its trigger, expected behavior, and actual outcome, and tested the resulting changes.</p>
+</div>
+</section>
+<section id="outcome" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">14 / DIGITAL DECAY</span>
+<h2>Final Outcome</h2>
+</header>
+<figure class="dd-figure dd-final-hero">
+<a class="image-link" href="../../assets/digital-decay/complete/final-outcome-3200.jpg" data-zoom aria-label="View larger: Desktop presentation of the final Digital Decay memory archive.">
+<img class="" src="../../assets/digital-decay/complete/final-outcome-1600.jpg" srcset="../../assets/digital-decay/complete/final-outcome-640.jpg 640w, ../../assets/digital-decay/complete/final-outcome-1600.jpg 1600w, ../../assets/digital-decay/complete/final-outcome-3200.jpg 1697w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="874" alt="Desktop presentation of the final Digital Decay memory archive." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Digital Decay · Final web prototype</figcaption>
+</figure>
+<div class="dd-outcome-actions">
+<button hidden class="button demo-button" data-demo="digital-decay">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+<path d="m8 5 11 7-11 7Z"/>
+</svg>
+<span>Watch demo</span>
+<small>2:49</small>
+</button>
+<a class="text-link" href="https://digital-decay-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Digital Decay Website ↗</a>
+<a class="text-link" href="https://youtu.be/UGk7W8I60Qc" target="_blank" rel="noopener noreferrer">Watch the Demo on YouTube ↗</a>
+</div>
+<p class="dd-outcome-statement">Protection freezes what remains. It cannot restore what has already been lost.</p>
+<div class="dd-gallery dd-final-screens">
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-detail-3200.jpg" data-zoom aria-label="View larger: Final photo-detail interface at the Progressive Image Loss stage.">
+<img class="" src="../../assets/digital-decay/complete/final-detail-1600.jpg" srcset="../../assets/digital-decay/complete/final-detail-640.jpg 640w, ../../assets/digital-decay/complete/final-detail-1600.jpg 1600w, ../../assets/digital-decay/complete/final-detail-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Final photo-detail interface at the Progressive Image Loss stage." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Photo detail · Progressive Image Loss</figcaption>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-assessment-3200.jpg" data-zoom aria-label="View larger: Final assessment dialog separating recorded evidence and AI inferences.">
+<img class="" src="../../assets/digital-decay/complete/final-assessment-1600.jpg" srcset="../../assets/digital-decay/complete/final-assessment-640.jpg 640w, ../../assets/digital-decay/complete/final-assessment-1600.jpg 1600w, ../../assets/digital-decay/complete/final-assessment-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Final assessment dialog separating recorded evidence and AI inferences." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Assessment Basis</figcaption>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-preserve-3200.jpg" data-zoom aria-label="View larger: Final Preserve Current State confirmation dialog.">
+<img class="" src="../../assets/digital-decay/complete/final-preserve-1600.jpg" srcset="../../assets/digital-decay/complete/final-preserve-640.jpg 640w, ../../assets/digital-decay/complete/final-preserve-1600.jpg 1600w, ../../assets/digital-decay/complete/final-preserve-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Final Preserve Current State confirmation dialog." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Preserve Current State</figcaption>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-pause-3200.jpg" data-zoom aria-label="View larger: Final confirmation dialog for a 30-day pause.">
+<img class="" src="../../assets/digital-decay/complete/final-pause-1600.jpg" srcset="../../assets/digital-decay/complete/final-pause-640.jpg 640w, ../../assets/digital-decay/complete/final-pause-1600.jpg 1600w, ../../assets/digital-decay/complete/final-pause-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Final confirmation dialog for a 30-day pause." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Pause for 30 Days</figcaption>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-plans-3200.jpg" data-zoom aria-label="View larger: Final membership comparison overlay.">
+<img class="" src="../../assets/digital-decay/complete/final-plans-1600.jpg" srcset="../../assets/digital-decay/complete/final-plans-640.jpg 640w, ../../assets/digital-decay/complete/final-plans-1600.jpg 1600w, ../../assets/digital-decay/complete/final-plans-3200.jpg 2561w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="873" alt="Final membership comparison overlay." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Compare Preservation Options</figcaption>
+</figure>
+<figure class="dd-figure ">
+<a class="image-link" href="../../assets/digital-decay/complete/final-related-3200.jpg" data-zoom aria-label="View larger: Final related-memories overlay.">
+<img class="" src="../../assets/digital-decay/complete/final-related-1600.jpg" srcset="../../assets/digital-decay/complete/final-related-640.jpg 640w, ../../assets/digital-decay/complete/final-related-1600.jpg 1600w, ../../assets/digital-decay/complete/final-related-3200.jpg 1920w" sizes="(max-width: 700px) 90vw, 70vw" width="1600" height="788" alt="Final related-memories overlay." loading="lazy" decoding="async">
+<span class="zoom-hint">View larger ↗</span>
+</a>
+<figcaption>Related Memories</figcaption>
+</figure>
+</div>
+</section>
+<section id="reflection" class="dd-section ">
+<header class="dd-section-title">
+<span class="eyebrow">15 / DIGITAL DECAY</span>
+<h2>Reflection</h2>
+</header>
+<div class="dd-reading dd-reflection">
+<p>This project shifted my attention from how much data is preserved to who decides which parts of the past remain accessible. Translating decay, subscription terms, and protection conditions into rules for the interactive system revealed a deeper tension: even when users can understand and challenge AI assessments, the platform still defines their available choices.</p>
+<p>The questionnaire and two photo-based interviews informed the scenario, but do not validate its criteria for assessing memory value. My next step is to test the prototype with participants’ own photographs, examining how they understand irreversible loss, challenge AI judgments, and respond to the pressure to pay for preservation, then use these findings to refine the design.</p>
+</div>
+</section>
+<div class="case-end">
+<a class="text-link" href="../../index.html#work">← Back to selected work</a>
+<a class="text-link" href="../ai-robotic-arm/index.html">Next / AI Robotic Arm →</a>
+</div>
+</article>
+</main>
+<footer id="contact" class="site-footer wrap">
+<div class="contact-heading">
+<p class="section-label">
+<span>05</span> / CONTACT</p>
+<h2>Let’s get in touch.</h2>
+<p>For conversations about design, research and what to make next.</p>
+</div>
+<a class="email-link" href="mailto:yixuanwang.personal@gmail.com">yixuanwang.personal@gmail.com <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 19 19 5M5 5h14v14"/>
+</svg>
+</a>
+<div class="footer-bottom">
+<span>YixuanWang <span class="subtle">/ Design & interaction</span>
+</span>
+<div>
+<a href="../../assets/yixuan-wang-cv.pdf" download>CV PDF <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/>
+</svg>
+</a>
+<a href="#top">Back to top ↑</a>
+</div>
+</div>
+</footer>
+<dialog class="media-dialog" id="media-dialog" aria-labelledby="media-title">
+<div class="dialog-header">
+<h2 id="media-title">Project media</h2>
+<button class="icon-button" data-close-dialog aria-label="Close media">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m6 6 12 12M6 18 18 6"/>
+</svg>
+</button>
+</div>
+<div id="media-content">
+</div>
+<p class="dialog-note">Escape to close</p>
+</dialog>
+</body>
+</html>
