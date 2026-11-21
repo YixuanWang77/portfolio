@@ -2,7 +2,7 @@
 
 网站本体位于 **`site/`**：原生 HTML、CSS 和少量 JavaScript。没有 Astro、React 或 TypeScript 运行依赖，不需要 npm 安装、代码生成或构建即可部署。
 
-已保留首页、完整 Digital Decay 案例、其他三个项目的概览、机械臂 In progress 页面、公开 CV、原有样式与整理好的展示素材。
+已保留首页、完整 Digital Decay 案例、其他三个项目的概览、机械臂仿真原型概览、公开 CV、原有样式与整理好的展示素材。首页与公开 CV 已按 2026-11-19 的新版简历同步，并加入选取的商业室内现场照片和住宅平面图。
 
 网站固定地址：https://yixuanwang77.github.io/portfolio/
 
@@ -111,7 +111,7 @@ sources: [
 
 更新资源时使用版本文件名（如 `digital-decay-demo-v2.mp4`），再更新配置中的地址、版本和日期。视频可采用长缓存，HTML / config.js 使用重新验证或短缓存，避免覆盖同一 URL 后旧缓存继续播放。存储需核对 HTTPS、Content-Type、Range / 206 及手机播放。
 
-机械臂仍为 In progress。配置中保留标题、简介、截图数组、视频和未来章节；不要填入未完成成果或不存在的演示地址。
+机械臂依据新版 CV 标为 Simulation prototype，记录 Unity UR3、ROS、Docker 和预训练姿态估计模型的仿真实现，不表示完成实体机械臂。截图和视频仍待补充；配置保留相应数组与未来章节，不填入不存在的演示地址。
 
 ## 可选检查工具
 
@@ -133,8 +133,8 @@ node scripts/test-site.mjs
 
 ## 素材与旧成果
 
-原始材料保留在 `source-materials/`，提取中间件和处理后本地视频保留在 `.local/`。本轮没有提取新素材、处理新视频或安装任何工具。未来确需另装素材处理工具时，应另行说明用途并征求确认。
+原始材料保留在 `source-materials/`，提取中间件和处理后本地视频保留在 `.local/`。首页新增的 2 张工作照片和 2 张住宅平面图使用独立的响应式公开副本，原件保持原样。本次未处理新视频或安装工具。
 
 旧的 TypeScript 内容源、生成器、重复输出和 package.json 已留档于 `.local/legacy-generator/`，供本地追溯，不是当前网站的编辑或部署来源。没有删除原始材料，也没有为技术迁移删减案例内容或简化设计。
 
-公开 CV PDF 已保留；修改 `site/cv/index.html` 后，可用浏览器“打印 / 保存 PDF”单独更新 `site/assets/yixuan-wang-cv.pdf`。不要用含私人资料的原始采集表替换它。
+公开 CV 文字版及两页 PDF 已依据新版简历同步，联系方式沿用只显示邮箱的做法。修改 `site/cv/index.html` 后，可用浏览器“打印 / 保存 PDF”更新同一个 `site/assets/yixuan-wang-cv.pdf`，各页面的下载链接无需改变。不要用含私人资料的原始采集表替换它。

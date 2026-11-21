@@ -19,8 +19,8 @@ window.PORTFOLIO_CONFIG = {
   "projectDrafts": {
     "ai-robotic-arm": {
       "title": "AI Robotic Arm Interactive Game",
-      "summary": "An interactive game project in development. Documentation will be added as the work progresses.",
-      "status": "In progress",
+      "summary": "A Unity UR3 simulation exploring how object labels, obstacles and game rules influence a robot’s decisions and simulated pick-and-place.",
+      "status": "Simulation prototype",
       "screenshots": [],
       "video": null,
       "sections": [

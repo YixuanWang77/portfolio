@@ -19,3 +19,34 @@
 .interaction-block .image-link img{max-height:540px;object-fit:contain}
 .document-placeholder p{color:var(--muted)}
 
+/* Background documentation uses the supplied photographs and complete plans. */
+.work-documentation{align-items:start;margin-bottom:18px}
+.work-documentation .image-link{height:clamp(230px,24vw,310px);border:1px solid var(--line);background:var(--wash);cursor:zoom-in}
+.work-documentation .image-link img{width:100%;height:100%;object-fit:cover}
+.work-documentation .drawing-document .image-link{padding:12px;background:white}
+.work-documentation .drawing-document img{object-fit:contain}
+.work-documentation .image-link:after{content:'View larger';position:absolute;right:10px;bottom:10px;padding:4px 9px;background:var(--paper);border:1px solid var(--line);font-size:14px;line-height:1.5}
+.work-documentation figcaption{font-size:14px;line-height:1.6}
+.work-documentation-more{margin-bottom:42px}
+.work-documentation-more>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6}
+.work-documentation-more>summary:after{content:'+';font-size:22px;color:var(--accent)}
+.work-documentation-more[open]>summary:after{content:'−'}
+.work-documentation-more .work-documentation{margin-top:24px}
+.turn-copy{font-size:16px}
+.turn-copy .turn-continuity{font-size:14px}
+@media(max-width:700px){.work-documentation .image-link{height:auto;aspect-ratio:4/3}.work-documentation .drawing-document .image-link{aspect-ratio:1.7}.work-documentation-more>summary{font-size:14px}.turn-copy{font-size:16px}}
+@media print{
+  .cv-page header{padding-bottom:6px}
+  .cv-page header .eyebrow{display:none}
+  .cv-page h1{font-size:25pt;margin:4px 0}
+  .cv-page header>p{font-size:10pt;line-height:1.4}
+  .cv-page section{padding-block:8px}
+  .cv-page section h2{font-size:13pt;margin-bottom:8px}
+  .cv-entry+.cv-entry{margin-top:9px}
+  .cv-entry h3{font-size:10pt;margin-bottom:3px}
+  .cv-entry p,.cv-page section>p{font-size:9pt;line-height:1.4}
+  .cv-entry .date,.cv-entry p+p{margin-top:3px}
+  .cv-experience{break-before:page}
+  @page{margin:14mm 16mm}
+}
+
