@@ -18,6 +18,8 @@ GitHub 仓库：https://github.com/YixuanWang77/portfolio
 
 核心正文、导航、图片和展开工作经历不依赖 JavaScript。JavaScript 负责媒体弹窗、点击播放、图片放大与打印。
 
+Digital Decay 项目页的图片均在页内展示。时间线采用纵向排版，设备图、三角图和服务图标保留原 PDF 的透明轮廓，单个界面截图移除了流程连接线和节点。
+
 ## 本地视频预览（可选工具，不是部署要求）
 
 现有处理后的视频仍在被忽略的 `.local/media/`。如需本地播放，在项目根目录执行：

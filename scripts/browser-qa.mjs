@@ -32,6 +32,9 @@ try{
  await p.navigate(origin+'projects/digital-decay/index.html');await ready();
  assert.equal(await p.evaluate(`document.querySelectorAll('video').length`),0,'Media created before click');
  assert.equal(videoRequests.length,0,'Video downloaded before click');
+ assert.equal(await p.evaluate(`document.querySelectorAll('.dd-case [data-zoom],.dd-case .zoom-hint,.dd-case a:has(img)').length`),0,'Digital Decay images must remain inline');
+ await p.click('.dd-cover img');
+ assert.equal(await p.evaluate(`document.querySelector('dialog').open`),false,'Project images opened a media dialog');
  let playback=null,fallback=null;
  if(!staticOnly){
  await p.click('[data-demo="digital-decay"]');
@@ -45,9 +48,6 @@ try{
  assert.equal(await p.evaluate(`document.querySelector('dialog').open`),false);
  assert.equal(await p.evaluate(`document.querySelectorAll('video').length`),0);
  assert.equal(await p.evaluate(`document.activeElement.dataset.demo`),'digital-decay');
- await p.click('[data-zoom]');assert(await p.evaluate(`document.querySelector('dialog').open`));await p.key('Escape');
- await p.evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');
- assert(await p.evaluate(`document.activeElement.hasAttribute('data-zoom')`));
  // Confirm browser-native H.264/AAC fallback decodes too.
  await p.evaluate(`(async()=>{const v=document.createElement('video');v.muted=true;v.src=${JSON.stringify(origin+'__local-media/digital-decay-web-v1.mp4')};document.body.append(v);await v.play();if(!v.videoWidth)await new Promise(r=>v.addEventListener('loadeddata',r,{once:true}));window.__fallbackVideo={width:v.videoWidth,height:v.videoHeight};v.pause();v.removeAttribute('src');v.load();v.remove();})()`);
  fallback=await p.evaluate('window.__fallbackVideo');assert(fallback.width>0);
@@ -56,7 +56,6 @@ try{
  assert(await p.evaluate(`document.querySelector('video').playsInline`));await p.key('Escape');
  }else{
   assert(await p.evaluate(`[...document.querySelectorAll('[data-demo]')].every(b=>b.hidden&&getComputedStyle(b).display==='none')`),'Unconfigured video button is visible');
-  await p.click('[data-zoom]');assert(await p.evaluate(`document.querySelector('dialog').open`));await p.key('Escape');
  }
  await p.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
  assert.equal(await p.evaluate(`getComputedStyle(document.documentElement).scrollBehavior`),'auto');
