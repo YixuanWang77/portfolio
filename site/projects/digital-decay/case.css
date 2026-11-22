@@ -90,9 +90,8 @@
 .dd-theories h4{font-size:20px}
 .dd-theories p{font-size:13px;line-height:1.9}
 .dd-frontier{margin-top:43px}
-.dd-frontier-list{display:grid;grid-template-columns:1fr 1fr;gap:30px 36px}
+.dd-frontier-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px var(--dd-gap)}
 .dd-frontier-list article{display:grid;grid-template-columns:110px 1fr;gap:23px;padding-top:23px;border-top:1px solid var(--line);align-items:start}
-.dd-frontier-list article:last-child{grid-column:1/-1;max-width:680px}
 .dd-frontier-list img{height:140px;object-fit:cover}
 .dd-frontier-list h4{font-size:19px}
 .dd-frontier-list p{font-size:13px;line-height:1.85}
@@ -365,9 +364,12 @@
 .dd-background-case .dd-case-copy { font-size: 16px; line-height: 1.85; }
 .dd-background-case .dd-source-gallery {
   margin: 4px 0 0;
-  gap: 14px;
-  height: 330px;
-  align-items: start;
+  gap: 18px;
+  height: 360px;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: #fff;
 }
 .dd-background-case .dd-source-gallery .dd-figure,
 .dd-background-case .dd-source-gallery .dd-visual { height: 100%; min-height: 0; }
@@ -377,11 +379,9 @@
   max-height: none;
   background: transparent;
   object-fit: contain;
-  object-position: left top;
+  object-position: center;
 }
-.dd-source-gallery:has(figure:nth-child(3)) { grid-template-rows: repeat(2,minmax(0,1fr)); }
-.dd-source-gallery:has(figure:nth-child(3))>figure:first-child { grid-row: 1 / -1; }
-.dd-background-group:first-of-type .dd-background-case:first-child .dd-source-gallery img { object-fit: cover; object-position: center top; }
+.dd-source-gallery:has(figure:nth-child(2)) { grid-template-columns: .82fr 1.18fr; }
 .dd-cone-image .dd-visual {
   display: flex;
   align-items: center;
@@ -453,7 +453,7 @@
 }
 @media (max-width: 700px) {
   .dd-background-case { grid-template-rows: auto auto auto; grid-row: auto; gap: 16px; }
-  .dd-background-case .dd-source-gallery { height: 300px; margin-top: 4px; }
+  .dd-background-case .dd-source-gallery { height: 300px; margin-top: 4px; padding: 14px; gap: 12px; }
   .dd-background-case h4 { margin: 0; }
   .dd-cone-image .dd-visual { aspect-ratio: 2.22; }
   .dd-cone-image img { width: 100%; height: auto; }
