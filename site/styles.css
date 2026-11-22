@@ -46,7 +46,7 @@
   .work-history summary>.date{font-size:12px}
   .work-history details>p{font-size:16px;line-height:1.8;padding-right:0}
   .work-documentation{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--grid-gap);align-items:start;margin-block:40px var(--section-space)}
-  .work-documentation img{display:block;width:100%;height:auto;aspect-ratio:15/11;object-fit:cover;filter:none}
+  .work-documentation img{display:block;width:100%;height:auto;aspect-ratio:15/11;object-fit:cover;filter:none;border:1px solid var(--line)}
   .work-documentation figcaption{font-size:14px;line-height:1.7;margin-top:14px}
   .turn-section{gap:24px var(--grid-gap);align-items:start;padding-block:var(--section-space)}
   .turn-section h2{font-size:clamp(36px,3.5vw,50px);line-height:1.13;max-width:11ch}
