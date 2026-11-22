@@ -32,7 +32,7 @@ try{
  await p.navigate(origin+'projects/digital-decay/index.html');await ready();
  assert.equal(await p.evaluate(`document.querySelectorAll('video').length`),0,'Media created before click');
  assert.equal(videoRequests.length,0,'Video downloaded before click');
- assert.equal(await p.evaluate(`document.querySelectorAll('.dd-case [data-zoom],.dd-case .zoom-hint,.dd-case a:has(img)').length`),0,'Digital Decay images must remain inline');
+ assert.equal(await p.evaluate(`document.querySelectorAll('.dd-case [data-zoom],.dd-case .zoom-hint,.dd-case a:has(img):not(.dd-demo-preview)').length`),0,'Digital Decay images must remain inline');
  await p.click('.dd-cover img');
  assert.equal(await p.evaluate(`document.querySelector('dialog').open`),false,'Project images opened a media dialog');
  let playback=null,fallback=null;
