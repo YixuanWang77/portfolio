@@ -3,7 +3,7 @@
 .af-case :is(section,article,figure,div,li){min-width:0}
 .af-case :is(h2,h3,h4){color:var(--af-green);letter-spacing:-.025em;text-wrap:balance}
 .af-case :is(p,figcaption,dd,li){text-wrap:pretty;word-break:normal;hyphens:none}
-.af-case h2{font-size:clamp(31px,3.3vw,47px);line-height:1.16;text-transform:uppercase;max-width:28ch}
+.af-case h2{font-size:clamp(31px,3.3vw,47px);line-height:1.16;text-transform:uppercase;max-width:none}
 .af-case h3{font-size:clamp(23px,2.15vw,30px);line-height:1.3;margin-bottom:18px}
 .af-case h4{font-size:21px;line-height:1.35;margin-bottom:12px}
 .af-case p+p{margin-top:18px}
@@ -47,6 +47,7 @@
 .af-caption-label{display:block;color:var(--af-green);font-weight:500;margin-bottom:3px}
 .af-caption-label+span{display:block}
 .af-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--af-gap);align-items:start}
+.af-case .af-audience-intro>p{margin:0}
 .af-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .af-paired-copy>div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:18px}
 .af-paired-copy>div :is(h3,p){margin:0}
