@@ -92,8 +92,8 @@
 .gn-interview-grid{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px var(--gn-gap);margin-top:28px}
 .gn-interview-grid::before{content:'';position:absolute;z-index:1;pointer-events:none;right:35px;top:-21px;width:52px;height:14px;background:var(--gn-yellow);transform:rotate(-7deg)}
 .gn-interview-grid::after{content:'';position:absolute;z-index:1;pointer-events:none;left:19px;bottom:-8px;width:42px;height:13px;background:var(--gn-blue);transform:rotate(5deg)}
-.gn-interview-grid article{border:1px dashed #ada5d2;border-radius:12px;padding:24px;background:var(--gn-purple-tint)}
-.gn-interview-grid h4{font-size:23px;color:var(--gn-purple)}
+.gn-interview-grid article{border:1px solid #d4dee9;border-radius:12px;padding:24px;background:#eef3f8}
+.gn-interview-grid h4{font-size:23px;color:var(--accent)}
 .gn-findings{margin-top:35px}
 .gn-findings>article{padding:23px 24px;border-radius:10px;background:var(--gn-blue-tint)}
 .gn-findings h4{font-size:21px}
