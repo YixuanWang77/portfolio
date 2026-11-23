@@ -11,6 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -20,20 +21,59 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  upload:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      artifact_id: ${{ steps.upload.outputs.artifact_id }}
     steps:
       - uses: actions/checkout@v6
       - name: Read Pages configuration
         id: pages
         uses: actions/configure-pages@v5
       - name: Upload ready-to-serve website only
+        id: upload
         uses: actions/upload-pages-artifact@v4
         with:
           path: site
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+  deploy:
+    needs: upload
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for uploaded website metadata
+        uses: actions/github-script@v8
+        env:
+          PAGES_ARTIFACT_NAME: ${{ needs.upload.outputs.artifact_name }}
+          PAGES_ARTIFACT_ID: ${{ needs.upload.outputs.artifact_id }}
+        with:
+          retries: 3
+          script: |
+            for (let attempt = 0; attempt < 12; attempt++) {
+              const response = await github.rest.actions.listWorkflowRunArtifacts({
+                ...context.repo,
+                run_id: context.runId,
+                per_page: 100,
+                headers: {'Cache-Control': 'no-cache'}
+              });
+              const artifact = response.data.artifacts.find(item =>
+                item.name === process.env.PAGES_ARTIFACT_NAME &&
+                String(item.id) === process.env.PAGES_ARTIFACT_ID && !item.expired
+              );
+              if (artifact) {
+                core.info('The uploaded website is available for deployment.');
+                await new Promise(resolve => setTimeout(resolve, 5000));
+                return;
+              }
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            throw new Error('The uploaded website metadata is not yet available.');
       - name: Publish site
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.upload.outputs.artifact_name }}
