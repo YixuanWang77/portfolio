@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 <link rel="stylesheet" href="../../styles.css">
-<link rel="stylesheet" href="case.css?v=complete-archflow">
+<link rel="stylesheet" href="case.css?v=award-documents-and-alignment">
 <script defer src="../../config.js">
 </script>
 <script defer src="../../app.js">
@@ -44,7 +44,10 @@
 <aside class="af-award" aria-label="MUSE Design Awards recognition">
 <img src="../../assets/archflow/refined/muse-gold-logo.png" width="929" height="467" alt="Official gold MUSE Design Awards logo." fetchpriority="high" decoding="async">
 <div><strong>2026 MUSE Design Awards · Gold Winner</strong><p>ArchFlow · Conceptual Design – Healthcare<br>Yixuan Wang · Student entry</p></div>
-<a href="https://design.museaward.com/winners-info.php?id=40477" target="_blank" rel="noopener noreferrer">View official award entry</a>
+<div class="af-award-actions" aria-label="Award documents">
+<a href="../../assets/archflow/awards/muse-gold-certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="View MUSE Gold e-certificate (PDF, opens in a new tab)">View e-certificate <span>PDF</span></a>
+<a href="../../assets/archflow/awards/muse-congratulatory-letter.pdf" target="_blank" rel="noopener noreferrer" aria-label="View MUSE congratulatory letter (PDF, opens in a new tab)">View congratulatory letter <span>PDF</span></a>
+</div>
 </aside>
 </header>
 <dl class="project-meta">
@@ -59,7 +62,7 @@
 <ol><li><a href="#inspiration"><span>01</span>Inspiration &amp; Background</a></li><li><a href="#research"><span>02</span>Research</a></li><li><a href="#audience"><span>03</span>Target Audience &amp; Interviews</a></li><li><a href="#goals"><span>04</span>Comparison &amp; Design Goals</a></li><li><a href="#technology"><span>05</span>Technology</a></li><li><a href="#development"><span>06</span>Technology Development</a></li><li><a href="#prototyping"><span>07</span>Functional Prototyping &amp; Testing</a></li><li><a href="#interaction"><span>08</span>Interaction Flow</a></li><li><a href="#service"><span>09</span>Service Flow</a></li><li><a href="#interface"><span>10</span>UI Design</a></li><li><a href="#business"><span>11</span>Business Canvas</a></li><li><a href="#reflection"><span>12</span>Reflection</a></li></ol></nav>
 
 <section class="af-section" id="inspiration"><header class="af-section-title"><span class="eyebrow">01 / Inspiration &amp; Background</span><h2>Inspiration &amp; Background</h2></header>
-<div class="af-two">
+<div class="af-two af-paired-copy">
 <div><h3>A question that began during exercise</h3><p>The project began during a conversation with a friend at the gym. A change in foot position under load led us to discuss his experience of flatfoot, discomfort during longer walks and the role of arch support.</p><p>This observation became a starting point for research into how people notice discomfort, interpret it and decide when to seek further assessment.</p></div>
 <div><h3>From occasional discomfort to a daily design problem</h3><p>I looked at the relationship between foot support, everyday movement and the feedback available outside a clinic. Existing products offered different approaches to support, while progress and changes over time were harder for a user to follow.</p><p>The design question became how to connect physical support with understandable feedback during everyday life.</p></div>
 </div>
@@ -73,9 +76,9 @@
 
 <section class="af-section" id="research"><header class="af-section-title"><span class="eyebrow">02 / Research</span><h2>Research</h2></header>
 <div class="af-reading"><p class="af-lead">The literature research examined plantar pressure, gait and the progression of adult-acquired flatfoot deformity, or AAFD.</p><p>Plantar pressure describes contact and load distribution under the foot. Gait adds a time-based view of movement. Considering both informed the proposed sensor layout and the need to understand patterns over time.</p></div>
-<div class="af-two af-divider">
-<div><h3>Plantar pressure</h3><figure class="af-figure af-research-art"><img src="../../assets/archflow/refined/pressure-comparison.png" width="790" height="344" alt="Pressure-map reference showing different contact and load patterns under the feet." loading="lazy" decoding="async"><figcaption>Reference imagery assembled in the project’s literature research.</figcaption></figure></div>
-<div><h3>Dynamic gait</h3><figure class="af-figure af-research-art"><img src="../../assets/archflow/refined/gait-reference.png" width="850" height="255" alt="Reference diagram illustrating phases of the gait cycle." loading="lazy" decoding="async"><figcaption>Gait-phase reference from the original research board.</figcaption></figure></div>
+<div class="af-two af-divider af-paired-research">
+<div><h3>Plantar pressure</h3><figure class="af-figure af-research-art"><img src="../../assets/archflow/refined/pressure-comparison.png" width="790" height="344" alt="Pressure-map reference showing different contact and load patterns under the feet." loading="lazy" decoding="async"><figcaption>Plantar-pressure reference.<span class="af-credit">Source · National Library of Medicine.</span></figcaption></figure></div>
+<div><h3>Dynamic gait</h3><figure class="af-figure af-research-art"><img src="../../assets/archflow/refined/gait-reference.png" width="850" height="255" alt="Reference diagram illustrating phases of the gait cycle." loading="lazy" decoding="async"><figcaption>Gait-phase reference.<span class="af-credit">Source · ResearchGate.</span></figcaption></figure></div>
 </div>
 <div class="af-divider"><h3>Classifications</h3><p class="af-reading">The original research used the four-stage AAFD classification. Stages I and II informed the project’s target context.</p></div>
 <div class="af-stages">
@@ -84,7 +87,7 @@
 <article><img src="../../assets/archflow/refined/stage-three.png" width="375" height="302" alt="Research-board sketch illustrating a rigid foot deformity." loading="lazy" decoding="async"><h3>Stage III</h3><p>A rigid deformity, with reduced flexibility in the affected joints.</p></article>
 <article><img src="../../assets/archflow/refined/stage-four.png" width="396" height="308" alt="Research-board sketch illustrating ankle involvement in advanced deformity." loading="lazy" decoding="async"><h3>Stage IV</h3><p>Deformity that also involves the ankle joint.</p></article>
 </div>
-<p class="af-source">Clinical context · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8696898/" target="_blank" rel="noopener noreferrer">Henry, Shakked &amp; Ellis · Adult-Acquired Flatfoot Deformity</a>. Sketches are reproduced from the project’s research board.</p>
+<p class="af-source">Clinical context · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8696898/" target="_blank" rel="noopener noreferrer">Henry, Shakked &amp; Ellis · Adult-Acquired Flatfoot Deformity</a>. Stage illustrations are reproduced from the original project research board.</p>
 </section>
 
 <section class="af-section" id="audience"><header class="af-section-title"><span class="eyebrow">03 / Target Audience &amp; Interviews</span><h2>Target Audience &amp; Interviews</h2></header>
@@ -121,7 +124,7 @@
 </section>
 
 <section class="af-section" id="technology"><header class="af-section-title"><span class="eyebrow">05 / Technology</span><h2>Technology</h2></header>
-<div class="af-two"><div><h3>Plantar pressure sensing</h3><p>The research compared piezoresistive, capacitive and optoelectronic sensing approaches. The concept uses pressure-sensitive elements to relate contact under the foot to a spatial pressure pattern.</p></div><div><h3>Gait kinematics</h3><p>An inertial measurement unit, or IMU, is included in the sensing architecture to complement pressure measurements with movement information. The placement study considers how the two data types could be interpreted together.</p></div></div>
+<div class="af-two af-paired-technology"><div><h3>Plantar pressure sensing</h3><p>The research compared piezoresistive, capacitive and optoelectronic sensing approaches. The concept uses pressure-sensitive elements to relate contact under the foot to a spatial pressure pattern.</p></div><div><h3>Gait kinematics</h3><p>An inertial measurement unit, or IMU, is included in the sensing architecture to complement pressure measurements with movement information. The placement study considers how the two data types could be interpreted together.</p></div></div>
 <div class="af-sensor-layout">
 <figure class="af-figure af-sensor-figure"><div class="af-sensor-diagram"><img src="../../assets/archflow/refined/sensor-map.png" width="620" height="1188" alt="Foot-shaped sensor placement diagram with four plantar sensing positions and a central IMU." loading="lazy" decoding="async"><span class="af-sensor-node" style="--x:53.2%;--y:80.9%">L1</span><span class="af-sensor-node" style="--x:68.9%;--y:51.1%">L2</span><span class="af-sensor-node" style="--x:70.1%;--y:29.5%">L3</span><span class="af-sensor-node" style="--x:18.6%;--y:37.6%">L4</span><span class="af-sensor-node" style="--x:47.5%;--y:50.8%">IMU</span></div><figcaption>Sensor location study · Proposed sensing architecture.</figcaption></figure>
 <ol class="af-sensor-list">
@@ -200,8 +203,8 @@
 <div class="af-reading"><p>The interface organizes pressure information, activity and service touchpoints. A desktop overview supports a broader view of the profile, while mobile concepts focus on trends, feedback and appointments.</p><p class="af-source">Interface concepts · Displayed measurements, activity totals, appointments and subscription details are illustrative prototype content.</p></div>
 <figure class="af-figure af-ui-dashboard"><img src="../../assets/archflow/refined/dashboard.png" width="1139" height="807" alt="ArchFlow dashboard concept showing feet information, body information, customized solution options and a subscription example." loading="lazy" decoding="async"><figcaption>Dashboard · Pressure information and support options within one overview.</figcaption></figure>
 <div class="af-two af-ui-mobiles">
-<article><div><h3>Daily wear &amp; tracking</h3><p>A plantar-pressure trend sits alongside activity summaries, bringing recorded values and everyday movement into the same view.</p><p>The design explores a more continuous record of use between periodic assessments.</p></div><figure class="af-figure "><img src="../../assets/archflow/refined/mobile-tracking.png" width="593" height="1219" alt="ArchFlow mobile tracking interface with a plantar-pressure trend, step count and walking duration." loading="lazy" decoding="async"><figcaption>Mobile overview · Illustrative pressure and activity records.</figcaption></figure></article>
-<article><div><h3>Calibration &amp; appointments</h3><p>The second mobile concept connects a pressure trend with consultation and appointment touchpoints.</p><p>Adjustment feedback and follow-up are intended to remain understandable within the wider service journey.</p></div><figure class="af-figure "><img src="../../assets/archflow/refined/mobile-calibration.png" width="593" height="1219" alt="ArchFlow mobile concept showing a pressure trend and online or physical appointment cards." loading="lazy" decoding="async"><figcaption>Mobile service view · Follow-up and appointment concepts.</figcaption></figure></article>
+<article><div><h3>Daily wear &amp; tracking</h3><p>A plantar-pressure trend sits alongside activity summaries, bringing recorded values and everyday movement into the same view.</p><p>The design explores a more continuous record of use between periodic assessments.</p></div><figure class="af-figure "><img src="../../assets/archflow/refined/mobile-tracking.png" width="593" height="1219" alt="ArchFlow mobile tracking interface with a plantar-pressure trend, step count and walking duration." loading="lazy" decoding="async"><figcaption><span class="af-caption-label">Mobile overview</span><span>Illustrative pressure and activity records.</span></figcaption></figure></article>
+<article><div><h3>Calibration &amp; appointments</h3><p>The second mobile concept connects a pressure trend with consultation and appointment touchpoints.</p><p>Adjustment feedback and follow-up are intended to remain understandable within the wider service journey.</p></div><figure class="af-figure "><img src="../../assets/archflow/refined/mobile-calibration.png" width="593" height="1219" alt="ArchFlow mobile concept showing a pressure trend and online or physical appointment cards." loading="lazy" decoding="async"><figcaption><span class="af-caption-label">Mobile service view</span><span>Follow-up and appointment concepts.</span></figcaption></figure></article>
 </div>
 </section>
 
@@ -228,7 +231,6 @@
 <article><h3>Further development</h3><p>I would involve more users and practitioners earlier, develop a thinner integrated form, and evaluate comfort, accuracy, drift, noise and chamber durability over longer periods.</p></article>
 </div>
 <dl class="af-status"><dt>Project status</dt><dd>Functional bench prototype and product/service concept. Medical efficacy, rehabilitation outcomes and long-term wearable performance have not been established by this work. Next steps include calibration studies, clinical comparison and professional review of adjustment and referral thresholds.</dd></dl>
-<p class="af-source">Recognition · <a href="https://design.museaward.com/winners-info.php?id=40477" target="_blank" rel="noopener noreferrer">2026 MUSE Design Awards · Gold Winner · Conceptual Design – Healthcare</a>.</p>
 </section>
 <a class="text-link next-link" href="../sdg/index.html">Next project · SDG</a>
 </article>
