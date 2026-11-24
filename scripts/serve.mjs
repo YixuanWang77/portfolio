@@ -12,7 +12,7 @@ const localFiles=new Map([
  ['digital-decay-web-v1.webm',path.resolve('.local/media/digital-decay-web-v1.webm')],
  ['digital-decay-web-v1.mp4',path.resolve('.local/media/digital-decay-web-v1.mp4')],
 ]);
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.pdf':'application/pdf','.mp4':'video/mp4','.webm':'video/webm','.xml':'application/xml','.txt':'text/plain; charset=utf-8','.vtt':'text/vtt; charset=utf-8'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.pdf':'application/pdf','.mp4':'video/mp4','.webm':'video/webm','.xml':'application/xml','.txt':'text/plain; charset=utf-8','.vtt':'text/vtt; charset=utf-8','.ttf':'font/ttf'};
 const server=http.createServer((req,res)=>{
  try{
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'}).end();return;}

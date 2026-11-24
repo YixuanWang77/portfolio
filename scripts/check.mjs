@@ -6,7 +6,7 @@ import vm from 'node:vm';
 import {spawnSync} from 'node:child_process';
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{assert(!entry.isSymbolicLink(),'Site cannot contain symlinks');return entry.isDirectory()?walk(path.join(dir,entry.name)):[path.join(dir,entry.name)];});}
 const files=walk('site');
-assert(files.every(f=>/\.(html|css|js|jpg|png|svg|pdf|txt|vtt|webp)$/.test(f)||path.basename(f)==='.nojekyll'),'Unexpected deployable file');
+assert(files.every(f=>/\.(html|css|js|jpg|png|svg|pdf|txt|vtt|webp|ttf)$/.test(f)||path.basename(f)==='.nojekyll'),'Unexpected deployable file');
 assert(!files.some(f=>/\.(ts|tsx|jsx|mjs|docx|mp4|webm)$/.test(f)),'Non-static source or private media in website');
 for(const file of [...files.filter(f=>f.endsWith('.js')),...fs.readdirSync('scripts').filter(f=>f.endsWith('.mjs')).map(f=>'scripts/'+f)]){const result=spawnSync(process.execPath,['--check',file],{encoding:'utf8'});assert.equal(result.status,0,`${file}: ${result.stderr}`);}
 const pages=files.filter(f=>f.endsWith('.html'));
